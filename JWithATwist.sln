@@ -5,16 +5,52 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "JWithATwist", "JWithATwist\JWithATwist.fsproj", "{0F2DADA6-C9E9-4B12-8A14-E732166B3458}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "JWithATwist.Test", "JWithATwist.Test\JWithATwist.Test.fsproj", "{D62538F9-589E-4DBD-82A3-44F1C78ADE35}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "JWithATwist.InstallShield", "JWithATwist.InstallShield\JWithATwist.InstallShield.isproj", "{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0F2DADA6-C9E9-4B12-8A14-E732166B3458} = {0F2DADA6-C9E9-4B12-8A14-E732166B3458}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
 		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
 		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2DADA6-C9E9-4B12-8A14-E732166B3458}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.Debug|Any CPU.ActiveCfg = DVD-5
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.Debug|Any CPU.Build.0 = DVD-5
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.DVD-5|Any CPU.Build.0 = DVD-5
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.Release|Any CPU.ActiveCfg = SingleImage
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.Release|Any CPU.Build.0 = SingleImage
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.SingleImage|Any CPU.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
