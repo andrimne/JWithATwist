@@ -263,6 +263,7 @@
 		<row><td>NewBinary16</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallFirstUse.ico</td></row>
 		<row><td>NewBinary17</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallPartial.ico</td></row>
 		<row><td>NewBinary18</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\InstallStateMenu.ico</td></row>
+		<row><td>NewBinary19</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td></row>
 		<row><td>NewBinary2</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\New.ibd</td></row>
 		<row><td>NewBinary3</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\Up.ibd</td></row>
 		<row><td>NewBinary4</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\WarningIcon.ibd</td></row>
@@ -343,11 +344,13 @@
 		<row><td>ISO19770_LocalTag</td><td>{16CF469A-7402-4BB0-A077-A9D0F2B38240}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISO19770_SystemTag</td><td>{63E0DF47-5163-435B-9FB6-B44D9E0C7A30}</td><td>CommonAppDataFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{64BE6B33-AF80-4785-9BE7-AF235C63135C}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{83C85D06-717F-45DC-8969-F7C5EF14979E}</td><td>ProgramFilesFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Content_Files</td><td>{CD52C779-DCD9-4411-BA1A-AF00CF9C63C5}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.content_files</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>JWithATwist.Primary_Output</td><td>{C2CB3951-27AF-4527-B32B-D701980409DA}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Primary_Output1</td><td>{5FAFA3D1-7E4B-4991-ACD6-80E9F8703882}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Test.Content_Files</td><td>{D623880C-ACEF-4915-8272-7259FD5B88C6}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.test.content_fil</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>JWithATwist.Test.Primary_Output</td><td>{96F3FF11-88C8-4FAB-A323-0213B7BAE0E3}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.test.primary_out</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>JWithATwist.Test.exe</td><td>{810F4CCF-C8BD-4872-9C9D-584B55D2FB53}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.test.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>JWithATwist.dll</td><td>{9C8302B2-BA17-4A4F-9EEA-30CE7FB274C1}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td><td>{3440B56F-78D4-47D2-8CB1-FEFD556DB70D}</td><td>AppDataFolder</td><td>2</td><td/><td>ndp452_kb2901907_x86_x64_all</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Test.Primary_Output1</td><td>{104F00D1-747D-429A-B5D3-6D6528172198}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.test.primary_out</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -558,7 +561,7 @@
 		<row><td>LicenseAgreement</td><td>DlgLine</td><td>Line</td><td>48</td><td>234</td><td>326</td><td>0</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td/></row>
 		<row><td>LicenseAgreement</td><td>DlgTitle</td><td>Text</td><td>13</td><td>6</td><td>292</td><td>25</td><td>65539</td><td/><td>##IDS__IsLicenseDlg_LicenseAgreement##</td><td/><td/><td>0</td><td/><td/><td/></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>PushButton</td><td>301</td><td>188</td><td>65</td><td>17</td><td>3</td><td/><td>##IDS_PRINT_BUTTON##</td><td>Agree</td><td/><td>0</td><td/><td/><td/></row>
-		<row><td>LicenseAgreement</td><td>Memo</td><td>ScrollableText</td><td>8</td><td>55</td><td>358</td><td>130</td><td>7</td><td/><td/><td/><td/><td>0</td><td/><td>&lt;ISProjectFolder&gt;\GPLv3.rtf</td><td/></row>
+		<row><td>LicenseAgreement</td><td>Memo</td><td>ScrollableText</td><td>8</td><td>55</td><td>358</td><td>130</td><td>7</td><td/><td/><td/><td/><td>0</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\GPLv3.rtf</td><td/></row>
 		<row><td>LicenseAgreement</td><td>Next</td><td>PushButton</td><td>230</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_NEXT##</td><td>Cancel</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>MaintenanceType</td><td>Back</td><td>PushButton</td><td>164</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_BACK##</td><td>Next</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>MaintenanceType</td><td>Banner</td><td>Bitmap</td><td>0</td><td>0</td><td>374</td><td>44</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td>NewBinary1</td></row>
@@ -777,7 +780,7 @@
 		<row><td>SplashBitmap</td><td>Branding2</td><td>Text</td><td>3</td><td>228</td><td>50</td><td>13</td><td>65537</td><td/><td>##IDS_INSTALLSHIELD##</td><td/><td/><td>0</td><td/><td/><td/></row>
 		<row><td>SplashBitmap</td><td>Cancel</td><td>PushButton</td><td>301</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_CANCEL##</td><td>Back</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>SplashBitmap</td><td>DlgLine</td><td>Line</td><td>48</td><td>234</td><td>326</td><td>0</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td/></row>
-		<row><td>SplashBitmap</td><td>Image</td><td>Bitmap</td><td>13</td><td>12</td><td>349</td><td>211</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td>NewBinary5</td></row>
+		<row><td>SplashBitmap</td><td>Image</td><td>Bitmap</td><td>13</td><td>12</td><td>349</td><td>211</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td>NewBinary19</td></row>
 		<row><td>SplashBitmap</td><td>Next</td><td>PushButton</td><td>230</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_NEXT##</td><td>Cancel</td><td/><td>0</td><td/><td/><td/></row>
 	</table>
 
@@ -1056,16 +1059,18 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
-		<row><td>AppDataFolder</td><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td></row>
 		<row><td>CommonAppDataFolder</td><td>ISO19770_SystemTag</td></row>
 		<row><td>INSTALLDIR</td><td>ISO19770_LocalTag</td></row>
 		<row><td>INSTALLDIR</td><td>ISO19770_SystemTag</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>INSTALLDIR</td><td>JWithATwist.Content_Files</td></row>
 		<row><td>INSTALLDIR</td><td>JWithATwist.Primary_Output</td></row>
+		<row><td>INSTALLDIR</td><td>JWithATwist.Primary_Output1</td></row>
+		<row><td>INSTALLDIR</td><td>JWithATwist.Test.Content_Files</td></row>
 		<row><td>INSTALLDIR</td><td>JWithATwist.Test.Primary_Output</td></row>
-		<row><td>INSTALLDIR</td><td>JWithATwist.Test.exe</td></row>
-		<row><td>INSTALLDIR</td><td>JWithATwist.dll</td></row>
-		<row><td>INSTALLDIR</td><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td></row>
+		<row><td>INSTALLDIR</td><td>JWithATwist.Test.Primary_Output1</td></row>
+		<row><td>ProgramFilesFolder</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1157,10 +1162,10 @@
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>StartMenuFolder</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>JWITHATWIST_INSTALL</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISYourDataBaseDir</td><td>INSTALLDIR</td><td>Database</td><td/><td>0</td><td/></row>
-		<row><td>JWITHATWIST_MOCK_PARSER1</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist Mock Parser</td><td/><td>0</td><td/></row>
+		<row><td>JWITHATWIST_INSTALL</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist</td><td/><td>0</td><td/></row>
 		<row><td>LocalAppDataFolder</td><td>TARGETDIR</td><td>.:LocalA~1|LocalAppData</td><td/><td>0</td><td/></row>
 		<row><td>MyPicturesFolder</td><td>TARGETDIR</td><td>.:MyPict~1|MyPictures</td><td/><td>0</td><td/></row>
 		<row><td>NetHoodFolder</td><td>TARGETDIR</td><td>.:NetHood</td><td/><td>0</td><td/></row>
@@ -1172,7 +1177,7 @@
 		<row><td>ProgramMenuFolder</td><td>TARGETDIR</td><td>.:Programs</td><td/><td>3</td><td/></row>
 		<row><td>RecentFolder</td><td>TARGETDIR</td><td>.:Recent</td><td/><td>0</td><td/></row>
 		<row><td>SendToFolder</td><td>TARGETDIR</td><td>.:SendTo</td><td/><td>3</td><td/></row>
-		<row><td>StartMenuFolder</td><td>TARGETDIR</td><td>.:STARTM~1|Start Menu</td><td/><td>3</td><td/></row>
+		<row><td>StartMenuFolder</td><td>TARGETDIR</td><td>STARTM~1|StartMenuFolder</td><td/><td>3</td><td/></row>
 		<row><td>StartupFolder</td><td>TARGETDIR</td><td>.:StartUp</td><td/><td>3</td><td/></row>
 		<row><td>System16Folder</td><td>TARGETDIR</td><td>.:System</td><td/><td>0</td><td/></row>
 		<row><td>System64Folder</td><td>TARGETDIR</td><td>.:System64</td><td/><td>0</td><td/></row>
@@ -1184,9 +1189,7 @@
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
 		<row><td>andrimne</td><td>ProgramMenuFolder</td><td>andrimne</td><td/><td>1</td><td/></row>
-		<row><td>jwitha_1_jwithatwist_mock_parser</td><td>private</td><td>JWITHA~1|JWithATwist Mock Parser</td><td/><td>1</td><td/></row>
 		<row><td>jwitha_1_jwithatwist_mock_parser1</td><td>andrimne</td><td>JWITHA~1|JWithATwist Mock Parser</td><td/><td>1</td><td/></row>
-		<row><td>private</td><td>ProgramMenuFolder</td><td>Private</td><td/><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -1881,11 +1884,13 @@
 		<row><td>AlwaysInstall</td><td>ISO19770_LocalTag</td></row>
 		<row><td>AlwaysInstall</td><td>ISO19770_SystemTag</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>AlwaysInstall</td><td>JWithATwist.Content_Files</td></row>
 		<row><td>AlwaysInstall</td><td>JWithATwist.Primary_Output</td></row>
+		<row><td>AlwaysInstall</td><td>JWithATwist.Primary_Output1</td></row>
+		<row><td>AlwaysInstall</td><td>JWithATwist.Test.Content_Files</td></row>
 		<row><td>AlwaysInstall</td><td>JWithATwist.Test.Primary_Output</td></row>
-		<row><td>AlwaysInstall</td><td>JWithATwist.Test.exe</td></row>
-		<row><td>AlwaysInstall</td><td>JWithATwist.dll</td></row>
-		<row><td>AlwaysInstall</td><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td></row>
+		<row><td>AlwaysInstall</td><td>JWithATwist.Test.Primary_Output1</td></row>
 	</table>
 
 	<table name="File">
@@ -1900,10 +1905,10 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
-		<row><td>jwithatwist.dll</td><td>JWithATwist.dll</td><td>JWITHA~1.DLL|JWithATwist.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\erling\Documents\Visual Studio 2015\Projects\JWithATwist\JWithATwist.Test\bin\Release\JWithATwist.dll</td><td>1</td><td/></row>
-		<row><td>jwithatwist.ico</td><td>ISX_DEFAULTCOMPONENT</td><td>JWITHA~1.ICO|JWithATwist.ico</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\erling\Documents\Visual Studio 2015\Projects\JWithATwist\JWithATwist\JWithATwist.ico</td><td>1</td><td/></row>
-		<row><td>jwithatwist.test.exe</td><td>JWithATwist.Test.exe</td><td>JWITHA~1.EXE|JWithATwist.Test.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Users\erling\Documents\Visual Studio 2015\Projects\JWithATwist\JWithATwist.Test\bin\Release\JWithATwist.Test.exe</td><td>1</td><td/></row>
-		<row><td>ndp452_kb2901907_x86_x64_all</td><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td><td>NDP452~1.EXE|NDP452-KB2901907-x86-x64-AllOS-ENU.exe</td><td>0</td><td/><td/><td/><td>1</td><td>C:\Program Files (x86)\InstallShield\2015LE\SetupPrerequisites\Microsoft .net\4.5\Full\NDP452-KB2901907-x86-x64-AllOS-ENU.exe</td><td>1</td><td/></row>
+		<row><td>jwithatwist.content_files</td><td>JWithATwist.Content_Files</td><td>JWithATwist.Content Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist&gt;|ContentFiles</td><td>3</td><td/></row>
+		<row><td>jwithatwist.primary_output</td><td>JWithATwist.Primary_Output1</td><td>JWithATwist.Primary Output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist&gt;|Built</td><td>3</td><td/></row>
+		<row><td>jwithatwist.test.content_fil</td><td>JWithATwist.Test.Content_Files</td><td>JWithATwist.Test.Content Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist.Test&gt;|ContentFiles</td><td>3</td><td/></row>
+		<row><td>jwithatwist.test.primary_out</td><td>JWithATwist.Test.Primary_Output1</td><td>JWithATwist.Test.Primary Output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist.Test&gt;|Built</td><td>3</td><td/></row>
 	</table>
 
 	<table name="FileSFPCatalog">
@@ -1920,6 +1925,8 @@
 		<col key="yes" def="s72">Tag</col>
 		<col def="S255">Data</col>
 		<row><td>JWithATwist.Test.exe</td><td/></row>
+		<row><td>_Built</td><td/></row>
+		<row><td>_Built1</td><td/></row>
 	</table>
 
 	<table name="ISBillBoard">
@@ -2049,11 +2056,13 @@
 		<row><td>ISO19770_LocalTag</td><td/><td/><td>_276C497E_0960_40A1_8BF9_0E910C072FE1_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISO19770_SystemTag</td><td/><td/><td>_2FE23AF0_BF3C_4721_8086_A3D1C05F3C1A_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_224FA31E_03BB_44E9_B1BD_051B2EC61D73_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_EFED887B_4537_48C7_882A_20C7EDEF9CAC_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>JWithATwist.Content_Files</td><td/><td/><td>_C2894931_E005_45D0_B4D3_2DEACC8B6EE2_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>JWithATwist.Primary_Output</td><td/><td/><td>_79FDC777_5126_4103_9241_788EF54143CF_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>JWithATwist.Primary_Output1</td><td/><td/><td>_E6EF8F03_1E9A_48EC_B36E_3DA1382C02D1_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>JWithATwist.Test.Content_Files</td><td/><td/><td>_64D29FCE_8681_491E_AA63_91F1E042730B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>JWithATwist.Test.Primary_Output</td><td/><td/><td>_05905CFB_9E28_4E61_A165_AB12C46FBDC6_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>JWithATwist.Test.exe</td><td/><td/><td>_D33B153B_D7A0_43DD_8DFD_0BC92F203639_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>JWithATwist.dll</td><td/><td/><td>_A4EB63CD_B270_44B4_840B_138EF3F446F4_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td><td/><td/><td>_2A8DAEC1_93F3_423F_9D04_5E15CAA8E3AD_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>JWithATwist.Test.Primary_Output1</td><td/><td/><td>_BCF01873_B642_4C33_8212_0AD5624B8DA5_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2400,7 +2409,7 @@
 		<row><td>DVD-18</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1033</td><td>0</td><td>2</td><td>Intel</td><td/><td>1033</td><td>0</td><td>15.83</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
 		<row><td>DVD-5</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1033</td><td>0</td><td>2</td><td>Intel</td><td/><td>1033</td><td>0</td><td>4.38</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
 		<row><td>DVD-9</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>Default</td><td>3</td><td>1033</td><td>0</td><td>2</td><td>Intel</td><td/><td>1033</td><td>0</td><td>7.95</td><td>1</td><td>2048</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>75805</td><td/><td/><td/><td>3</td></row>
-		<row><td>SingleImage</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>PackageName</td><td>1</td><td>1033</td><td>0</td><td>1</td><td>Intel</td><td/><td>1033</td><td>0</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>108573</td><td/><td/><td/><td>3</td></row>
+		<row><td>SingleImage</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>PackageName</td><td>1</td><td>1033</td><td>0</td><td>1</td><td>Intel</td><td/><td>1033</td><td>2</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://www.github.com/andrimne</td><td/><td/><td/><td/><td>108572</td><td/><td/><td/><td>3</td></row>
 		<row><td>WebDeployment</td><td>Express</td><td>&lt;ISProjectDataFolder&gt;</td><td>PackageName</td><td>4</td><td>1033</td><td>2</td><td>1</td><td>Intel</td><td/><td>1033</td><td>0</td><td>0</td><td>0</td><td>0</td><td/><td>0</td><td/><td>MediaLocation</td><td/><td>http://</td><td/><td/><td/><td/><td>124941</td><td/><td/><td/><td>3</td></row>
 	</table>
 
@@ -2643,7 +2652,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>andrimne</td><td>0</td><td/><td>-1163645427</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>andrimne</td><td>0</td><td/><td>-1163615632</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>1033</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-1163636947</td></row>
@@ -3457,8 +3466,17 @@
 		<row><td>IDS_SETUPEXE_EXPIRE_MSG</td><td>1033</td><td>This setup works until %s. The setup will now exit.</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDS_SETUPEXE_LAUNCH_COND_E</td><td>1033</td><td>This setup was built with an evaluation version of InstallShield and can only be launched from setup.exe.</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME1</td><td>1033</td><td>LAUNCH~1.EXE|Launch JWithATwist.Test.exe</td><td>0</td><td/><td>-1163646933</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME10</td><td>1033</td><td>JWithATwist Mock Browser</td><td>0</td><td/><td>-1029415861</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME11</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>-1029423989</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME12</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1029386004</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME2</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163602228</td></row>
 		<row><td>IDS_SHORTCUT_DISPLAY_NAME3</td><td>1033</td><td>LAUNCH~1.EXE|Launch NDP452-KB2901907-x86-x64-AllOS-ENU.exe</td><td>0</td><td/><td>-1163635155</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME4</td><td>1033</td><td>LAUNCH~1.EXE|Launch JWithATwist.Test.exe</td><td>0</td><td/><td>-1163618449</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME5</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163611504</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME6</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163610640</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME7</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163642607</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME8</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>-1029436405</td></row>
+		<row><td>IDS_SHORTCUT_DISPLAY_NAME9</td><td>1033</td><td>Launch |Built</td><td>0</td><td/><td>-1029413845</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO</td><td>1033</td><td>From the list of servers below, select the database server you would like to target.</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_DB</td><td>1033</td><td>From the list of catalog names below, select the database catalog you would like to target.</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDS_SQLBROWSE_INTRO_TEMPLATE</td><td>1033</td><td>[IS_SQLBROWSE_INTRO]</td><td>0</td><td/><td>-1163642231</td></row>
@@ -3747,10 +3765,13 @@
 		<row><td>IDS__TargetReq_DESC_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-1163642231</td></row>
-		<row><td>ID_STRING1</td><td>1033</td><td>http://www.andrimne.com</td><td>0</td><td/><td>-1163645427</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>andrimne</td><td>0</td><td/><td>-1163645427</td></row>
+		<row><td>ID_STRING1</td><td>1033</td><td>https://github.com/andrimne</td><td>0</td><td/><td>-1163626191</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>andrimne</td><td>0</td><td/><td>-1163615632</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>LAUNCH~1.EXE|Launch JWithATwist.Test.exe</td><td>0</td><td/><td>-1163624405</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163649300</td></row>
+		<row><td>ID_STRING5</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163609743</td></row>
+		<row><td>ID_STRING6</td><td>1033</td><td>JWithATwist Mock Browser</td><td>0</td><td/><td>-1029409717</td></row>
+		<row><td>ID_STRING7</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1029379860</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1163642231</td></row>
 	</table>
 
@@ -3870,12 +3891,18 @@
 		<col def="V0">Data</col>
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
-		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProjectFolder&gt;\JWithATwist.ico</td><td>0</td></row>
+		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
+		<row><td>JWithATwist.Test.e_0B5CCBBD0E7048749E072394FE907DE0.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>JWithATwist.Test.e_30AC0EC096B947D5B1CC1F4E4D5467D5.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>JWithATwist.Test.e_4A81C72AF4C248A29D443964FF0E68B4.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 		<row><td>JWithATwist.Test.e_7CE388C69015480981155C128A6FC07F.exe</td><td/><td>&lt;ISProjectFolder&gt;\JWithATwist.ico</td><td>0</td></row>
+		<row><td>JWithATwist.Test.e_848565BEE9AC43DEB04B5ADFFDCCAEB9.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 		<row><td>JWithATwist.Test.e_8C4677219B2A48C6A39E31E8DA099AE5.exe</td><td/><td>&lt;ISProjectFolder&gt;\JWithATwist.ico</td><td>0</td></row>
+		<row><td>JWithATwist.Test.e_99C6710305EB46EA8597BEBBE78E517C.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 		<row><td>JWithATwist.Test.e_AE932BDC17B44B498C6B137A714BD5EE.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
-		<row><td>NDP452_KB2901907_x_A8AFB71AA6134F6CB8FDEAA4D008FDBC.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2015LE\SetupPrerequisites\Microsoft .net\4.5\Full\NDP452-KB2901907-x86-x64-AllOS-ENU.exe</td><td>0</td></row>
+		<row><td>JWithATwist.Test.e_B1B91BE016754B84B950B55BC85CFC18.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
+		<row><td>_Built1_3BE7DC2AEDF14BC8AEC842CA8C145352.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
+		<row><td>_Built_CF62A2F142E44ADA96C61F9C75DEC24A.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 	</table>
 
 	<table name="IniFile">
@@ -4009,7 +4036,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{A3E31557-4F1C-4D81-9BEE-092F0EE6EF85}</td></row>
 		<row><td>ISUSSignature</td><td>{93F04059-6C7A-4DD7-87A3-B690A63DA19B}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewRelease,viewSystemSearch,viewAppFiles,viewProject,viewISToday,viewObjects,viewUpdateService,viewUpgradePaths,viewShortcuts,viewRegistry,viewIniFiles,viewFileExtensions,viewEnvironmentVariables,viewVRoots,viewServices,viewUI,viewTextMessages,viewCustomActions</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewRelease,viewSystemSearch,viewAppFiles,viewProject,viewISToday,viewObjects,viewUpdateService,viewUpgradePaths,viewShortcuts,viewRegistry,viewIniFiles,viewFileExtensions,viewEnvironmentVariables,viewVRoots,viewServices,viewUI,viewTextMessages,viewCustomActions,viewLearnMore</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4466,10 +4493,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>FileKey1</td><td>JWithATwist.Test.exe</td><td/><td>andrimne</td><td>2</td></row>
-		<row><td>FileKey2</td><td>JWithATwist.Test.exe</td><td/><td>jwitha_1_jwithatwist_mock_parser1</td><td>2</td></row>
-		<row><td>JWithATwist.Test.exe</td><td>JWithATwist.Test.exe</td><td/><td>jwitha_1_jwithatwist_mock_parser1</td><td>2</td></row>
-		<row><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td><td/><td>jwitha_1_jwithatwist_mock_parser1</td><td>2</td></row>
+		<row><td>_Built</td><td>JWithATwist.Test.Primary_Output1</td><td/><td>jwitha_1_jwithatwist_mock_parser1</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4555,9 +4579,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>JWithATwist.Test.exe</td><td>jwitha_1_jwithatwist_mock_parser1</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>JWithATwist.Test.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>JWithATwist.Test.e_4A81C72AF4C248A29D443964FF0E68B4.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>JWithATwist.Test.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME2##</td><td>JWithATwist.Test.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>JWithATwist.Test.e_AE932BDC17B44B498C6B137A714BD5EE.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td><td>jwitha_1_jwithatwist_mock_parser1</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>NDP452_KB2901907_x86_x64_AllOS_ENU.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>NDP452_KB2901907_x_A8AFB71AA6134F6CB8FDEAA4D008FDBC.exe</td><td>1</td><td>1</td><td>AppDataFolder</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>_Built</td><td>jwitha_1_jwithatwist_mock_parser1</td><td>##IDS_SHORTCUT_DISPLAY_NAME12##</td><td>JWithATwist.Test.Primary_Output1</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_CF62A2F142E44ADA96C61F9C75DEC24A.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME12##</td><td>JWithATwist.Test.Primary_Output1</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built1_3BE7DC2AEDF14BC8AEC842CA8C145352.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

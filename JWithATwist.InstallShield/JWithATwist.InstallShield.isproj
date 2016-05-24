@@ -29,4 +29,14 @@
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
 	<ItemGroup/>
+	<ItemGroup>
+		<ProjectReference Include="..\JWithATwist\JWithATwist.fsproj">
+			<Name>JWithATwist</Name>
+			<Project>{0F2DADA6-C9E9-4B12-8A14-E732166B3458}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\JWithATwist.Test\JWithATwist.Test.fsproj">
+			<Name>JWithATwist.Test</Name>
+			<Project>{D62538F9-589E-4DBD-82A3-44F1C78ADE35}</Project>
+		</ProjectReference>
+	</ItemGroup>
 </Project>

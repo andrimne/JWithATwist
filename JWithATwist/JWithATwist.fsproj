@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>JWithATwist</RootNamespace>
     <AssemblyName>JWithATwist</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Name>JWithATwist</Name>
@@ -51,6 +51,7 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
+    <Compile Include="Todo.fs" />
     <Compile Include="AssemblyInfo.fs" />
     <Compile Include="Library1.fs" />
     <None Include="Script.fsx" />
@@ -58,9 +59,11 @@
     <Content Include="packages.config" />
     <Content Include="copyright.txt" />
     <None Include="regid.2015-2.se.erlinghellenas.www.jwithatwist_1463998265.swidtag" />
-    <None Include="JWithATwist.xcf" />
+    <None Include="GPLv3.rtf" />
     <Content Include="JWithATwist.ico" />
-    <None Include="setup.exe" />
+    <None Include="JWithATwist.xcf" />
+    <None Include="splash.png" />
+    <None Include="splash.xcf" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FParsec">

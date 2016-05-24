@@ -10,6 +10,7 @@ EndProject
 Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "JWithATwist.InstallShield", "JWithATwist.InstallShield\JWithATwist.InstallShield.isproj", "{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}"
 	ProjectSection(ProjectDependencies) = postProject
 		{0F2DADA6-C9E9-4B12-8A14-E732166B3458} = {0F2DADA6-C9E9-4B12-8A14-E732166B3458}
+		{D62538F9-589E-4DBD-82A3-44F1C78ADE35} = {D62538F9-589E-4DBD-82A3-44F1C78ADE35}
 	EndProjectSection
 EndProject
 Global

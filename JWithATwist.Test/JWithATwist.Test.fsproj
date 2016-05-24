@@ -10,7 +10,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>JWithATwist.Test</RootNamespace>
     <AssemblyName>JWithATwist.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <Name>JWithATwist.Test</Name>
