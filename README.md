@@ -42,8 +42,8 @@
 	<li>A monadic conjunction has a verb argument to the left and one to the right, and one noun argument to the right. Like this: <code>|- |. + 1 </code>.</li>
 	<li>A dyadic conjunction has a verb argument to the left and one to the right, and one noun argument to the left and one to the right. Like this: <code>1 |- . + 1</code></li>
 	<li>An adverb to the left of a conjunction is together with it&#39;s verb the left argument of the conjunction. Like this in the monadic case:<code> + / |. + 1 </code>. Like this in the dyadic case:<code> 1 + / . + 1 </code>.</li>
-	<li>An adverb together with its left verb forms a new verb. A conjunction together with its right verb and it&#39;s left verb or adverb forms a new verb.</li>
-</ul>
+</ul>	
+<p>An adverb together with its left verb forms a new verb. A conjunction together with its right verb and it&#39;s left verb or adverb forms a new verb.</p>
 
 <p>Monadic verbs, adverbs and conjunctions create verb trains like this:</p>
 
