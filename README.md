@@ -82,7 +82,7 @@
 
 <ul>
 	<li>The parser creates a composite compiled .NET function which is executed when the parsing process is finished. It is more like JIT-compiled than interpreted code.</li>
-	<li>The parser is written in F# and with #FParsec.</li>
+	<li>The parser is written in F# and with FParsec.</li>
 	<li>In the F# environment you can write code nearly as efficient as in C++.</li>
 	<li>The full .NET environment and the rest of the Windows environment, called Windows RT, is easily available from F#. Integration with the Windows environment is easy.</li>
 	<li>In JWithATwist an adverb or conjunction always returns a noun.</li>
