@@ -11,7 +11,7 @@
 <p>I use the J syntax to describe this language.</p>
 
 <ul>
-	<li>NOUN - an n-dimensional array of values where the values are simple data types like character or integer, but they can also can be other n-dimensional arrays.</li>
+	<li>NOUN - an n-dimensional array of values where the values are simple data types like character or integer, but they can also be other n-dimensional arrays.</li>
 	<li>VERB - a function with one or two noun arguments returning a noun.</li>
 	<li>ADVERB - an operator with a verb argument and one or two noun arguments, usually returning a verb.</li>
 	<li>CONJUNCTION - an operator with two verb arguments and one or two noun arguments, normally returning a verb.</li>
