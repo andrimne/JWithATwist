@@ -72,7 +72,7 @@
 <p>In the present implementation the noun definitions does not add any functional value.</p>
 
 <p>I will use this parser as an argument in a discussion about the J language. I have questioned the syntax of tacit J many times. The answer is always - How should it be instead. This is how I think it should be. Nearly exactly like normal scripted J.</p> 
-<p> I want to add that if you add a Left verb and a Right verb to this parser, you could add a verb definition from verbs which would possibly let you use higher order functions on these verbs.</p>
+<p> I want to add that if you add a Left verb and a Right verb to this parser, you could add a definition of a new functional entity with one or two verb arguments and a verb result which would possibly let you use higher order functions on these verbs.</p>
 
 <p>You could of course also use Left verb and Right verb to define adverbs and conjunctions in some kind of direct definition form.</p>
 
