@@ -55,7 +55,7 @@
 
 <p>A program is called a NOUN DEFINITION. It is written between curly brackets, like this <code>{ some code }</code> . It can contain VERB DEFINITIONS, written between curly brackets where the first bracket is immediately followed by <code>!</code> . Like this <code>{! some code }</code> .</p>
 
-<p>A verb definition can contain the NOUN FUNCTIONS - LEFT NOUN and RIGHT NOUN - denoted by [ and ] . The Left Noun is a placeholder for the noun immediately preceding the verb definition. The Right Noun is a placeholder for the noun immediately following the verb definition.</p>
+<p>A verb definition can contain the NOUN FUNCTIONS - LEFT NOUN and RIGHT NOUN - denoted by <code>[</code> and <code>]</code> . The Left Noun is a placeholder for the noun immediately preceding the verb definition. The Right Noun is a placeholder for the noun immediately following the verb definition.</p>
 
 <p>A verb definition containing only Right Nouns forms a monadic verb. A verb definition containing a Left Noun forms a dyadic verb, even if there is no Right Noun. In that case you are forced to have a noun to the right of the verb definition and this noun is silently ignored.</p>
 
