@@ -47,8 +47,7 @@
 
 <p>Monadic verbs, adverbs and conjunctions create verb trains like this:</p>
 
-<pre>
-<code> |-     + /     |-     |- |. +     |-     + / |. +     |- 1</code></pre>
+<pre><code> |-     + /     |-     |- |. +     |-     + / |. +     |- 1</code></pre>
 
 <p>I use extra blanks to show the separation between verbs.</p>
 
