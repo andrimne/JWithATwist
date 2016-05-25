@@ -53,7 +53,7 @@
 
 <p>You always need at least one blank between two syntax elements.</p>
 
-<p>A program is called a NOUN DEFINITION. It is written between curly brackets, like this <code>{ some code }</code> It can contain VERB DEFINITIONS, written between curly brackets where the first bracket is immediately followed by ! . Like this <code>{! some code }</code> .</p>
+<p>A program is called a NOUN DEFINITION. It is written between curly brackets, like this <code>{ some code }</code> . It can contain VERB DEFINITIONS, written between curly brackets where the first bracket is immediately followed by ! . Like this <code>{! some code }</code> .</p>
 
 <p>A verb definition can contain the NOUN FUNCTIONS - LEFT NOUN and RIGHT NOUN - denoted by [ and ] . The Left Noun is a placeholder for the noun immediately preceding the verb definition. The Right Noun is a placeholder for the noun immediately following the verb definition.</p>
 
