@@ -24,7 +24,7 @@
 	<li>Dyadic verb Addition,<code> +</code></li>
 	<li>Dyadic verb Subtraction,<code> - </code></li>
 	<li>Monadic verb Negation,<code> |- </code></li>
-	<li>Monadic adverb,<code> / </code>. This operator is defined <code> u / y &lt;-&gt; y u y</code>. It applies the in-fix u verb between two copies of the verb argument.<code> + / 1 &lt;-&gt; 1 + 1 &lt;-&gt; 2</code>.</li>
+	<li>Monadic adverb,<code> / </code>. This operator is defined <code> u / y &lt;-&gt; y u y</code>. It applies the in-fix u verb between two copies of the argument.<code> + / 1 &lt;-&gt; 1 + 1 &lt;-&gt; 2</code>.</li>
 	<li>Dyadic adverb,<code> /- </code>. This operator is defined <code>x u/- y &lt;-&gt; x u y</code>. It applies the infix u verb between the left and right argument.<code> 1 + /- 1 &lt;-&gt; 1 + 1 &lt;-&gt; 2</code></li>
 	<li>Monadic conjunction,<code> |. </code>. This operator is defined<code> u |. v y &lt;-&gt; u y v y</code>. It applies the infix dyadic verb v between copies of the right argument and the monadic verb u to the result.<code> |- |. + 1 &lt;-&gt; |- 1 + 1 &lt;-&gt; -2 </code>.</li>
 	<li>Dyadic conjunction,<code> . </code>. This operator is defined<code> x u . v y &lt;-&gt; u x v y </code>. It applies the infix dyadic verb v between the left and right arguments and the monadic verb u to the result.<code> 2 |- . + 5 &lt;-&gt; |- 2 + 5 &lt;-&gt; -7 </code>.</li>
