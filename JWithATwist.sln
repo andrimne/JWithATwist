@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "JWithATwist", "JWithATwist\JWithATwist.fsproj", "{0F2DADA6-C9E9-4B12-8A14-E732166B3458}"
 EndProject
@@ -12,6 +12,12 @@ Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "JWithATwist.InstallShield",
 		{0F2DADA6-C9E9-4B12-8A14-E732166B3458} = {0F2DADA6-C9E9-4B12-8A14-E732166B3458}
 		{D62538F9-589E-4DBD-82A3-44F1C78ADE35} = {D62538F9-589E-4DBD-82A3-44F1C78ADE35}
 	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "JWithATwist.PerformanceTest", "JWithATwist.PerformanceTest\JWithATwist.PerformanceTest.fsproj", "{EED8F820-457B-4871-99C6-5493CFB9463D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "JWithATwist.Console", "JWithATwist.Console\JWithATwist.Console.fsproj", "{3C623837-231A-47D1-970B-ACBFAEC4F56A}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "JWithATwist.MockInterpreter", "JWithATwist.MockInterpreter\JWithATwist.MockInterpreter.fsproj", "{5372D991-F152-4941-AA01-3A04FBD87D76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +58,36 @@ Global
 		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.Release|Any CPU.Build.0 = SingleImage
 		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.SingleImage|Any CPU.ActiveCfg = SingleImage
 		{CBE8422F-6096-42F9-909C-56B7E3D2C4ED}.SingleImage|Any CPU.Build.0 = SingleImage
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{EED8F820-457B-4871-99C6-5493CFB9463D}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{3C623837-231A-47D1-970B-ACBFAEC4F56A}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{5372D991-F152-4941-AA01-3A04FBD87D76}.SingleImage|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

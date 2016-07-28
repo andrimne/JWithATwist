@@ -5,15 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0f2dada6-c9e9-4b12-8a14-e732166b3458</ProjectGuid>
+    <ProjectGuid>494d0f67-cdb3-402b-9039-fe246374d92a</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>JWithATwist</RootNamespace>
-    <AssemblyName>JWithATwist</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <RootNamespace>JWithATwist.DocBook</RootNamespace>
+    <AssemblyName>JWithATwist.DocBook</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Name>JWithATwist</Name>
-    <TargetFrameworkProfile />
+    <Name>JWithATwist.DocBook</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,7 +22,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\JWithATwist.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\JWithATwist.DocBook.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -32,8 +31,22 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\JWithATwist.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\JWithATwist.DocBook.XML</DocumentationFile>
   </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.fs" />
+    <Compile Include="Library1.fs" />
+    <None Include="Script.fsx" />
+  </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
   </PropertyGroup>
@@ -50,43 +63,6 @@
     </Otherwise>
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
-  <ItemGroup>
-    <Compile Include="Todo.fs" />
-    <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Base.fs" />
-    <Compile Include="ParserDefinitions.fs" />
-    <Compile Include="ParserInterface.fs" />
-    <Compile Include="Parser.fs" />
-    <Compile Include="ParserMockDefinitions.fs" />
-    <Compile Include="ParserMockInterface.fs" />
-    <Compile Include="ParserMock.fs" />
-    <Compile Include="Define.fs" />
-    <Content Include="packages.config" />
-    <Content Include="copyright.txt" />
-    <None Include="regid.2015-2.se.erlinghellenas.www.jwithatwist_1463998265.swidtag" />
-    <None Include="GPLv3.rtf" />
-    <Content Include="JWithATwist.ico" />
-    <None Include="JWithATwist.xcf" />
-    <None Include="splash.png" />
-    <None Include="splash.xcf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="FParsec">
-      <HintPath>..\packages\FParsec.1.0.2\lib\net40-client\FParsec.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="FParsecCS">
-      <HintPath>..\packages\FParsec.1.0.2\lib\net40-client\FParsecCS.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="mscorlib" />
-    <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-  </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

@@ -1,22 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>d62538f9-589e-4dbd-82a3-44f1c78ade35</ProjectGuid>
+    <ProjectGuid>eed8f820-457b-4871-99c6-5493cfb9463d</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>JWithATwist.Test</RootNamespace>
-    <AssemblyName>JWithATwist.Test</AssemblyName>
+    <RootNamespace>JWithATwist.PerformanceTest</RootNamespace>
+    <AssemblyName>JWithATwist.PerformanceTest</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
-    <Name>JWithATwist.Test</Name>
+    <Name>JWithATwist.PerformanceTest</Name>
+    <TargetFrameworkProfile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,7 +26,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\JWithATwist.Test.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\JWithATwist.PerformanceTest.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -38,7 +37,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\JWithATwist.Test.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\JWithATwist.PerformanceTest.XML</DocumentationFile>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
@@ -59,14 +58,13 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="Base.fs" />
-    <Compile Include="Define.fs" />
-    <Compile Include="Parser.fs" />
-    <Compile Include="ParserMock.fs" />
-    <Compile Include="System.fs" />
+    <Compile Include="PerformanceTest.fs" />
     <Compile Include="Program.fs" />
     <None Include="App.config" />
     <Content Include="packages.config" />
+    <None Include="_TraceEventProgrammersGuide.docx" />
+    <Content Include="TraceEvent.ReleaseNotes.txt" />
+    <Content Include="TraceEvent.ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FParsec">
@@ -77,14 +75,37 @@
       <HintPath>..\packages\FParsec.1.0.2\lib\net40-client\FParsecCS.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.Diagnostics.Tracing.TraceEvent">
+      <HintPath>..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.39\lib\net40\Microsoft.Diagnostics.Tracing.TraceEvent.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Console">
+      <HintPath>..\packages\System.Console.4.0.0-beta-23225\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>..\packages\System.Diagnostics.Process.4.0.0-beta-23225\lib\net46\System.Diagnostics.Process.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>..\packages\System.IO.FileSystem.4.0.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security.SecureString">
+      <HintPath>..\packages\System.Security.SecureString.4.0.0-beta-23409\lib\net46\System.Security.SecureString.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="xunit.abstractions">
       <HintPath>..\packages\xunit.abstractions.2.0.0\lib\net35\xunit.abstractions.dll</HintPath>
       <Private>True</Private>
@@ -101,6 +122,30 @@
       <HintPath>..\packages\xunit.extensibility.execution.2.1.0\lib\net45\xunit.execution.desktop.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="xunit.execution.dotnet">
+      <HintPath>..\packages\Microsoft.DotNet.BuildTools.TestSuite.1.0.0-prerelease-00508-01\lib\netstandard1.0\xunit.execution.dotnet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.performance.core">
+      <HintPath>..\packages\Microsoft.DotNet.xunit.performance.run.core.99.99.99-dev\lib\netstandard1.3\xunit.performance.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.performance.execution.desktop">
+      <HintPath>..\packages\Microsoft.DotNet.xunit.performance.99.99.99-dev\lib\net46\xunit.performance.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.performance.metrics">
+      <HintPath>..\packages\Microsoft.DotNet.xunit.performance.metrics.99.99.99-dev\lib\net46\xunit.performance.metrics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.performance.run.core">
+      <HintPath>..\packages\Microsoft.DotNet.xunit.performance.run.core.99.99.99-dev\lib\netstandard1.3\xunit.performance.run.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.runner.utility.dotnet">
+      <HintPath>..\packages\Microsoft.DotNet.BuildTools.TestSuite.1.0.0-prerelease-00508-01\lib\netstandard1.0\xunit.runner.utility.dotnet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JWithATwist\JWithATwist.fsproj">
@@ -109,11 +154,12 @@
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.39\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.39\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.39\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.39\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

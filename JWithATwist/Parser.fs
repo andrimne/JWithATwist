@@ -17,18 +17,26 @@
 *)
 namespace JWithATwist
 
+//OBS ! You are not supposed to change this program.
+//You should:
+//1. Modify the mock parser and run the tests.
+//2. Replace this program with the new mock parser.
+//3. Replace "open ParserMockDefinitions" with "open ParserDefinitions"
+//4. Replace "open ParserMockInterface" with "open ParserInterface"
+//4. Change module name to Parser
+
 open Microsoft.FSharp.Collections
 open Checked
 open System
 open FParsec
 //open J4Mono.Base
-open ParserMockDefinitions
-open ParserMockInterface
+open ParserDefinitions
+open ParserInterface
 //open J4Mono.ParserMockDefinitions
 //open J4Mono.ParserMockInterface
 
 
-module ParserMock =
+module Parser =
 
     let parseNounTrain, parseNounTrainImpl = createParserForwardedToRef()
 
@@ -601,4 +609,4 @@ module ParserMock =
                     printfn "%s" errorMsg
             |true 
                 ->
-                ()
+                ()                         

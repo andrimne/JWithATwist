@@ -1,5 +1,5 @@
 ﻿(*
-    JWithATwist Mock Parser - Parser for the programming language JWithATwist
+    JWithATwist - A Twisted Version of the Programming Language J
     Copyright (C) 2016 Erling Hellenäs
 
     This program is free software: you can redistribute it and/or modify
@@ -18,12 +18,14 @@
 namespace JWithATwist.Test
 
 open System
+open System.IO
 open System.Collections
 open System.Collections.Generic
 open Xunit
 open Xunit.Abstractions;
-open JWithATwist
 open JWithATwist.ParserMock
+open JWithATwist.ParserMockDefinitions
+open JWithATwist.ParserMockInterface
 open FParsec
 
 module ParserMock =
@@ -1045,5 +1047,109 @@ module ParserMock =
                 | Success(result, _, rest)   -> 
                         Assert.True(false)
 
+        [<Fact>]
+        member x.``Adverb with monadic left argument `` () =
+            let resultOption = parseAllSpeach "{! |- // 1 } "
+            match resultOption with
+                | Success(result, _, rest)   -> 
+                    match result with
+                    |[parseResult] ->
+                        match parseResult with
+                        |{Value=TypeNounUnit f} ->
+                            let r = f ()
+                            match r with
+                            |{Value= (-1)} ->
+                                Assert.True(true) 
+                            |_ ->
+                            Assert.True(false)                                
+                         |_ ->
+                            Assert.True(false) 
+                    |_ ->
+                        Assert.True(false)
+                |_ -> 
+                    Assert.True(false)
 
+        [<Fact>]
+        member x.``Adverb with monadic left argument as left argument of dyadic conjunction `` () =
+            let resultOption = parseAllSpeach "{! 2 |- // . + 5 } "
+            match resultOption with
+                | Success(result, _, rest)   -> 
+                    match result with
+                    |[parseResult] ->
+                        match parseResult with
+                        |{Value=TypeNounUnit f} ->
+                            let r = f ()
+                            match r with
+                            |{Value= (-7)} ->
+                                Assert.True(true) 
+                            |_ ->
+                            Assert.True(false)                                
+                         |_ ->
+                            Assert.True(false) 
+                    |_ ->
+                        Assert.True(false)
+                |_ -> 
+                    Assert.True(false)
 
+        [<Fact>]
+        member x.``Adverb with monadic left argument as left argument of monadic conjunction `` () =
+            let resultOption = parseAllSpeach "{! |- // |. + 5 } "
+            match resultOption with
+                | Success(result, _, rest)   -> 
+                    match result with
+                    |[parseResult] ->
+                        match parseResult with
+                        |{Value=TypeNounUnit f} ->
+                            let r = f ()
+                            match r with
+                            |{Value= (-10)} ->
+                                Assert.True(true) 
+                            |_ ->
+                            Assert.True(false)                                
+                         |_ ->
+                            Assert.True(false) 
+                    |_ ->
+                        Assert.True(false)
+                |_ -> 
+                    Assert.True(false)
+
+        [<Fact>]
+        member x.``A system exception during program execution should generate an error message `` () =
+            let resultOption = parseAllSpeach @"{!  -2147483647 - 200 } "
+            match resultOption with
+                | Success(result, _, rest)   -> 
+                    match result with
+                    |[parseResult] ->
+                        match parseResult with
+                        |{Value=TypeNounUnit f} ->
+                            let a = new StringWriter()
+                            Console.SetOut(a)
+                            ParsePrint parseResult
+                            let expected = "Arithmetic operation resulted in an overflow.\r\n"
+                            let actual = a.ToString()
+                            Assert.Equal(expected,actual)
+                        |_ ->
+                            Assert.True(false) 
+                    |_ ->
+                        Assert.True(false)
+                |_ -> 
+                    Assert.True(false)
+
+        [<Fact>]
+        member x.``A syntax error from the interpreter should generate an error message `` () =
+            let resultOption = parseAllSpeach @"{! 1 |- / 2 } "
+            match resultOption with
+                | Success(result, _, rest)   -> 
+                    match result with
+                    |[parseResult] ->
+                        match parseResult with
+                        |{Value=TypeNounUnit f} ->
+                            Assert.True(false) 
+                         |_ ->
+                            Assert.True(false) 
+                    |_ ->
+                        Assert.True(false)
+                | Failure(errorMsg, _, _) -> 
+                    Assert.True(true)
+
+                        
