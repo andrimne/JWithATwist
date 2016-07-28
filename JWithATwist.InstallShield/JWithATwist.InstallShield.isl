@@ -52,7 +52,7 @@
 	<summary>
 		<codepage>1252</codepage>
 		<title>Installation Database</title>
-		<subject>JWithATwist 0.11.2</subject>
+		<subject>##ID_STRING8##</subject>
 		<author>##ID_STRING2##</author>
 		<keywords>Installer,MSI,Database</keywords>
 		<comments>Contact:  Your local administrator</comments>
@@ -341,17 +341,20 @@
 		<col def="S0">ISDotNetInstallerArgsCommit</col>
 		<col def="S0">ISDotNetInstallerArgsUninstall</col>
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
-		<row><td>ISO19770_LocalTag</td><td>{16CF469A-7402-4BB0-A077-A9D0F2B38240}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISO19770_LocalTag</td><td>{16CF469A-7402-4BB0-A077-A9D0F2B38240}</td><td>INSTALLDIR</td><td>258</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISO19770_SystemTag</td><td>{63E0DF47-5163-435B-9FB6-B44D9E0C7A30}</td><td>CommonAppDataFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>ISX_DEFAULTCOMPONENT</td><td>{64BE6B33-AF80-4785-9BE7-AF235C63135C}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT</td><td>{64BE6B33-AF80-4785-9BE7-AF235C63135C}</td><td>INSTALLDIR</td><td>258</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td>{83C85D06-717F-45DC-8969-F7C5EF14979E}</td><td>ProgramFilesFolder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>IS_ININSTALL_SHORTCUT</td><td>{779BBF72-0A85-4F16-B259-DC6F30C7E38B}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>JWithATwist.Content_Files</td><td>{CD52C779-DCD9-4411-BA1A-AF00CF9C63C5}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.content_files</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>JWithATwist.Primary_Output</td><td>{C2CB3951-27AF-4527-B32B-D701980409DA}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>JWithATwist.Primary_Output1</td><td>{5FAFA3D1-7E4B-4991-ACD6-80E9F8703882}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>JWithATwist.Test.Content_Files</td><td>{D623880C-ACEF-4915-8272-7259FD5B88C6}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.test.content_fil</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>JWithATwist.Test.Primary_Output</td><td>{96F3FF11-88C8-4FAB-A323-0213B7BAE0E3}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.test.primary_out</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
-		<row><td>JWithATwist.Test.Primary_Output1</td><td>{104F00D1-747D-429A-B5D3-6D6528172198}</td><td>INSTALLDIR</td><td>2</td><td/><td>jwithatwist.test.primary_out</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td>{8985CD85-340E-45F1-A863-4483C1A8BE04}</td><td>ProgramFiles64Folder</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{4EC3F232-D8AF-4946-B603-E13999485D87}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>IS_ININSTALL_SHORTCUT</td><td>{779BBF72-0A85-4F16-B259-DC6F30C7E38B}</td><td>INSTALLDIR</td><td>258</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Console.Primary_Output</td><td>{9BA5FDD7-E2CC-405D-ABAA-B6C83756E778}</td><td>INSTALLDIR</td><td>258</td><td/><td>jwithatwist.console.primary_</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Content_Files</td><td>{CD52C779-DCD9-4411-BA1A-AF00CF9C63C5}</td><td>INSTALLDIR</td><td>258</td><td/><td>jwithatwist.content_files</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.MockInterpreter.Primary_Output</td><td>{FE70DE89-1476-4B33-B5E5-17374BB1DD1C}</td><td>INSTALLDIR</td><td>258</td><td/><td>jwithatwist.mockinterpreter.</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Primary_Output</td><td>{C2CB3951-27AF-4527-B32B-D701980409DA}</td><td>INSTALLDIR</td><td>258</td><td/><td>jwithatwist.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Primary_Output1</td><td>{5FAFA3D1-7E4B-4991-ACD6-80E9F8703882}</td><td>INSTALLDIR</td><td>258</td><td/><td>jwithatwist.primary_output</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Test.Primary_Output</td><td>{96F3FF11-88C8-4FAB-A323-0213B7BAE0E3}</td><td>INSTALLDIR</td><td>258</td><td/><td>jwithatwist.test.primary_out</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>JWithATwist.Test.Primary_Output1</td><td>{EA059C2D-DCF6-48B1-8BC1-D7794CE3CBB7}</td><td>INSTALLDIR</td><td>258</td><td/><td>jwithatwist.test.primary_out</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
 
 	<table name="Condition">
@@ -1065,13 +1068,17 @@
 		<row><td>INSTALLDIR</td><td>ISO19770_SystemTag</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT2</td></row>
+		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>INSTALLDIR</td><td>IS_ININSTALL_SHORTCUT</td></row>
+		<row><td>INSTALLDIR</td><td>JWithATwist.Console.Primary_Output</td></row>
 		<row><td>INSTALLDIR</td><td>JWithATwist.Content_Files</td></row>
+		<row><td>INSTALLDIR</td><td>JWithATwist.MockInterpreter.Primary_Output</td></row>
 		<row><td>INSTALLDIR</td><td>JWithATwist.Primary_Output</td></row>
 		<row><td>INSTALLDIR</td><td>JWithATwist.Primary_Output1</td></row>
-		<row><td>INSTALLDIR</td><td>JWithATwist.Test.Content_Files</td></row>
 		<row><td>INSTALLDIR</td><td>JWithATwist.Test.Primary_Output</td></row>
 		<row><td>INSTALLDIR</td><td>JWithATwist.Test.Primary_Output1</td></row>
+		<row><td>ProgramFiles64Folder</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>ProgramFilesFolder</td><td>ISX_DEFAULTCOMPONENT1</td></row>
 	</table>
 
@@ -1154,7 +1161,7 @@
 		<col def="I4">ISAttributes</col>
 		<col def="S255">ISFolderName</col>
 		<row><td>ALLUSERSPROFILE</td><td>TARGETDIR</td><td>.:ALLUSE~1|All Users</td><td/><td>0</td><td/></row>
-		<row><td>ANDRIMNE</td><td>ProgramFilesFolder</td><td>andrimne</td><td/><td>0</td><td/></row>
+		<row><td>ANDRIMNE</td><td>ProgramFiles64Folder</td><td>andrimne</td><td/><td>0</td><td/></row>
 		<row><td>AdminToolsFolder</td><td>TARGETDIR</td><td>.:Admint~1|AdminTools</td><td/><td>0</td><td/></row>
 		<row><td>AppDataFolder</td><td>TARGETDIR</td><td>.:APPLIC~1|Application Data</td><td/><td>0</td><td/></row>
 		<row><td>CommonAppDataFolder</td><td>TARGETDIR</td><td>.:Common~1|CommonAppData</td><td/><td>0</td><td/></row>
@@ -1165,11 +1172,12 @@
 		<row><td>FavoritesFolder</td><td>TARGETDIR</td><td>.:FAVORI~1|Favorites</td><td/><td>0</td><td/></row>
 		<row><td>FontsFolder</td><td>TARGETDIR</td><td>.:Fonts</td><td/><td>0</td><td/></row>
 		<row><td>GlobalAssemblyCache</td><td>TARGETDIR</td><td>.:Global~1|GlobalAssemblyCache</td><td/><td>0</td><td/></row>
-		<row><td>INSTALLDIR</td><td>JWITHATWIST_0.11.2</td><td>.</td><td/><td>0</td><td/></row>
+		<row><td>INSTALLDIR</td><td>JWITHATWIST_0.12</td><td>.</td><td/><td>0</td><td/></row>
 		<row><td>ISCommonFilesFolder</td><td>CommonFilesFolder</td><td>Instal~1|InstallShield</td><td/><td>0</td><td/></row>
 		<row><td>ISYourDataBaseDir</td><td>INSTALLDIR</td><td>Database</td><td/><td>0</td><td/></row>
 		<row><td>JWITHATWIST_0.11.1</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist 0.11.1</td><td/><td>0</td><td/></row>
 		<row><td>JWITHATWIST_0.11.2</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist 0.11.2</td><td/><td>0</td><td/></row>
+		<row><td>JWITHATWIST_0.12</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist 0.12</td><td/><td>0</td><td/></row>
 		<row><td>JWITHATWIST_INSTALL</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist</td><td/><td>0</td><td/></row>
 		<row><td>JWITHATWIST_V0.11.1</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist-v0.11.1</td><td/><td>0</td><td/></row>
 		<row><td>LocalAppDataFolder</td><td>TARGETDIR</td><td>.:LocalA~1|LocalAppData</td><td/><td>0</td><td/></row>
@@ -1195,8 +1203,6 @@
 		<row><td>WindowsFolder</td><td>TARGETDIR</td><td>.:Windows</td><td/><td>0</td><td/></row>
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
 		<row><td>andrimne</td><td>ProgramMenuFolder</td><td>andrimne</td><td/><td>1</td><td/></row>
-		<row><td>jwitha_1_jwithatwist_mock_parser1</td><td>andrimne</td><td>JWITHA~1|JWithATwist Mock Parser</td><td/><td>1</td><td/></row>
-		<row><td>jwithatwist_0.11.2</td><td>andrimne</td><td>JWITHA~1.2|jwithatwist 0.11.2</td><td/><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -1892,11 +1898,14 @@
 		<row><td>AlwaysInstall</td><td>ISO19770_SystemTag</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT2</td></row>
+		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>AlwaysInstall</td><td>IS_ININSTALL_SHORTCUT</td></row>
+		<row><td>AlwaysInstall</td><td>JWithATwist.Console.Primary_Output</td></row>
 		<row><td>AlwaysInstall</td><td>JWithATwist.Content_Files</td></row>
+		<row><td>AlwaysInstall</td><td>JWithATwist.MockInterpreter.Primary_Output</td></row>
 		<row><td>AlwaysInstall</td><td>JWithATwist.Primary_Output</td></row>
 		<row><td>AlwaysInstall</td><td>JWithATwist.Primary_Output1</td></row>
-		<row><td>AlwaysInstall</td><td>JWithATwist.Test.Content_Files</td></row>
 		<row><td>AlwaysInstall</td><td>JWithATwist.Test.Primary_Output</td></row>
 		<row><td>AlwaysInstall</td><td>JWithATwist.Test.Primary_Output1</td></row>
 	</table>
@@ -1913,9 +1922,10 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
+		<row><td>jwithatwist.console.primary_</td><td>JWithATwist.Console.Primary_Output</td><td>JWithATwist.Console.Primary Output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist.Console&gt;|Built</td><td>3</td><td/></row>
 		<row><td>jwithatwist.content_files</td><td>JWithATwist.Content_Files</td><td>JWithATwist.Content Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist&gt;|ContentFiles</td><td>3</td><td/></row>
+		<row><td>jwithatwist.mockinterpreter.</td><td>JWithATwist.MockInterpreter.Primary_Output</td><td>JWithATwist.MockInterpreter.Primary Output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist.MockInterpreter&gt;|Built</td><td>3</td><td/></row>
 		<row><td>jwithatwist.primary_output</td><td>JWithATwist.Primary_Output1</td><td>JWithATwist.Primary Output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist&gt;|Built</td><td>3</td><td/></row>
-		<row><td>jwithatwist.test.content_fil</td><td>JWithATwist.Test.Content_Files</td><td>JWithATwist.Test.Content Files</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist.Test&gt;|ContentFiles</td><td>3</td><td/></row>
 		<row><td>jwithatwist.test.primary_out</td><td>JWithATwist.Test.Primary_Output1</td><td>JWithATwist.Test.Primary Output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;JWithATwist.Test&gt;|Built</td><td>3</td><td/></row>
 	</table>
 
@@ -2066,13 +2076,16 @@
 		<row><td>ISO19770_SystemTag</td><td/><td/><td>_2FE23AF0_BF3C_4721_8086_A3D1C05F3C1A_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_224FA31E_03BB_44E9_B1BD_051B2EC61D73_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT1</td><td/><td/><td>_EFED887B_4537_48C7_882A_20C7EDEF9CAC_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT2</td><td/><td/><td>_CFEEB6B6_3E48_4B2E_A9D3_863608D27EBA_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_B7FF825B_0E12_4F0F_8EC8_07F5CE672F10_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>IS_ININSTALL_SHORTCUT</td><td/><td/><td>_68D294F6_4F7F_4D3F_A62D_2E5660FEC79F_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>JWithATwist.Console.Primary_Output</td><td/><td/><td>_287C1068_53B8_4492_B964_5ABAE37B8D02_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>JWithATwist.Content_Files</td><td/><td/><td>_C2894931_E005_45D0_B4D3_2DEACC8B6EE2_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>JWithATwist.MockInterpreter.Primary_Output</td><td/><td/><td>_62C052EA_1BF2_433C_BC0D_5A4D52A1A4C9_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>JWithATwist.Primary_Output</td><td/><td/><td>_79FDC777_5126_4103_9241_788EF54143CF_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>JWithATwist.Primary_Output1</td><td/><td/><td>_E6EF8F03_1E9A_48EC_B36E_3DA1382C02D1_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>JWithATwist.Test.Content_Files</td><td/><td/><td>_64D29FCE_8681_491E_AA63_91F1E042730B_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>JWithATwist.Test.Primary_Output</td><td/><td/><td>_05905CFB_9E28_4E61_A165_AB12C46FBDC6_FILTER</td><td/><td/><td/><td/></row>
-		<row><td>JWithATwist.Test.Primary_Output1</td><td/><td/><td>_BCF01873_B642_4C33_8212_0AD5624B8DA5_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>JWithATwist.Test.Primary_Output1</td><td/><td/><td>_15C1A9C7_663E_45B5_9690_30CABC90ECD7_FILTER</td><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="ISCustomActionReference">
@@ -2356,6 +2369,8 @@
 		<row><td>ISProjectDataFolder</td><td/><td/><td>1</td></row>
 		<row><td>ISProjectFolder</td><td/><td/><td>1</td></row>
 		<row><td>JWithATwist</td><td>JWithATwist\JWithATwist.fsproj</td><td/><td>2</td></row>
+		<row><td>JWithATwist.Console</td><td>JWithATwist.Console\JWithATwist.Console.fsproj</td><td/><td>2</td></row>
+		<row><td>JWithATwist.MockInterpreter</td><td>JWithATwist.MockInterpreter\JWithATwist.MockInterpreter.fsproj</td><td/><td>2</td></row>
 		<row><td>JWithATwist.Test</td><td>JWithATwist.Test\JWithATwist.Test.fsproj</td><td/><td>2</td></row>
 		<row><td>ProgramFilesFolder</td><td/><td/><td>1</td></row>
 		<row><td>SystemFolder</td><td/><td/><td>1</td></row>
@@ -3776,12 +3791,18 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>-1163642231</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td>http://www.andrimne.com</td><td>0</td><td/><td>-626785815</td></row>
+		<row><td>ID_STRING10</td><td>1033</td><td>NEWSHO~1|NewShortcut1</td><td>0</td><td/><td>-475790835</td></row>
+		<row><td>ID_STRING11</td><td>1033</td><td>JWITHA~1|JWithATwist Mock Interpreter</td><td>0</td><td/><td>-475775859</td></row>
+		<row><td>ID_STRING12</td><td>1033</td><td>JWITHA~1|JWithATwist Console</td><td>0</td><td/><td>-475764721</td></row>
+		<row><td>ID_STRING13</td><td>1033</td><td>JWITHA~1|JWithATwist Mock Interpreter</td><td>0</td><td/><td>-475785169</td></row>
 		<row><td>ID_STRING2</td><td>1033</td><td>andrimne</td><td>0</td><td/><td>-626785815</td></row>
 		<row><td>ID_STRING3</td><td>1033</td><td>LAUNCH~1.EXE|Launch JWithATwist.Test.exe</td><td>0</td><td/><td>-1163624405</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163649300</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163609743</td></row>
 		<row><td>ID_STRING6</td><td>1033</td><td>JWithATwist Mock Browser</td><td>0</td><td/><td>-1029409717</td></row>
 		<row><td>ID_STRING7</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1029379860</td></row>
+		<row><td>ID_STRING8</td><td>1033</td><td>JWithATwist 0.12</td><td>0</td><td/><td>-475776755</td></row>
+		<row><td>ID_STRING9</td><td>1033</td><td>JWITHA~1|JWithATwist Console</td><td>0</td><td/><td>-475762131</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1163642231</td></row>
 	</table>
 
@@ -3911,7 +3932,10 @@
 		<row><td>JWithATwist.Test.e_99C6710305EB46EA8597BEBBE78E517C.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 		<row><td>JWithATwist.Test.e_AE932BDC17B44B498C6B137A714BD5EE.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 		<row><td>JWithATwist.Test.e_B1B91BE016754B84B950B55BC85CFC18.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
-		<row><td>UNINST_Uninstall_J_243ED8648B4F41509E97A8BDD9DA9AD2.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2015LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
+		<row><td>NewShortcut21_89A5A9088B6444B7B4E7313238D1C29C.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
+		<row><td>NewShortcut2_2D00A86D75164076BCE2C9D19ABA83EF.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
+		<row><td>NewShortcut31_5E2BA26DCFC242C5A2B1B1B913A249E6.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
+		<row><td>NewShortcut3_C8D8ED2B7A1F4345A4B5B36D89828B37.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 		<row><td>_Built1_3BE7DC2AEDF14BC8AEC842CA8C145352.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 		<row><td>_Built_CF62A2F142E44ADA96C61F9C75DEC24A.exe</td><td/><td>&lt;VSSolutionFolder&gt;\JWithATwist\JWithATwist.ico</td><td>0</td></row>
 	</table>
@@ -4430,9 +4454,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
-		<row><td>ProductCode</td><td>{F0A1AB55-A68A-48F7-98B1-DA159E1DBCEE}</td><td/></row>
-		<row><td>ProductName</td><td>JWithATwist 0.11.2</td><td/></row>
-		<row><td>ProductVersion</td><td>0.11.2</td><td/></row>
+		<row><td>ProductCode</td><td>{FE8AF9B8-DE47-4686-BCC3-9D40CDEA618C}</td><td/></row>
+		<row><td>ProductName</td><td>JWithATwist 0.12</td><td/></row>
+		<row><td>ProductVersion</td><td>0.12</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4509,8 +4533,8 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
-		<row><td>UNINST_Uninstall_JWithATwist_0.11.2</td><td>IS_ININSTALL_SHORTCUT</td><td/><td>jwithatwist_0.11.2</td><td>2</td></row>
-		<row><td>_Built</td><td>JWithATwist.Test.Primary_Output1</td><td/><td>jwitha_1_jwithatwist_mock_parser1</td><td>2</td></row>
+		<row><td>NewShortcut2</td><td>JWithATwist.Console.Primary_Output</td><td/><td>andrimne</td><td>2</td></row>
+		<row><td>NewShortcut3</td><td>JWithATwist.MockInterpreter.Primary_Output</td><td/><td>andrimne</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4596,9 +4620,10 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>UNINST_Uninstall_JWithATwist_0.11.2</td><td>jwithatwist_0.11.2</td><td>UNINST|Uninstall JWithATwist 0.11.2</td><td>IS_ININSTALL_SHORTCUT</td><td>[SystemFolder]msiexec.exe</td><td>/x {F0A1AB55-A68A-48F7-98B1-DA159E1DBCEE}</td><td/><td/><td>UNINST_Uninstall_J_243ED8648B4F41509E97A8BDD9DA9AD2.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>_Built</td><td>jwitha_1_jwithatwist_mock_parser1</td><td>##IDS_SHORTCUT_DISPLAY_NAME12##</td><td>JWithATwist.Test.Primary_Output1</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built_CF62A2F142E44ADA96C61F9C75DEC24A.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>_Built1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME12##</td><td>JWithATwist.Test.Primary_Output1</td><td>AlwaysInstall</td><td/><td/><td/><td>_Built1_3BE7DC2AEDF14BC8AEC842CA8C145352.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut2</td><td>andrimne</td><td>##ID_STRING9##</td><td>JWithATwist.Console.Primary_Output</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut2_2D00A86D75164076BCE2C9D19ABA83EF.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut21</td><td>DesktopFolder</td><td>##ID_STRING12##</td><td>JWithATwist.Console.Primary_Output</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut21_89A5A9088B6444B7B4E7313238D1C29C.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut3</td><td>andrimne</td><td>##ID_STRING11##</td><td>JWithATwist.MockInterpreter.Primary_Output</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut3_C8D8ED2B7A1F4345A4B5B36D89828B37.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut31</td><td>DesktopFolder</td><td>##ID_STRING13##</td><td>JWithATwist.MockInterpreter.Primary_Output</td><td>AlwaysInstall</td><td/><td/><td/><td>NewShortcut31_5E2BA26DCFC242C5A2B1B1B913A249E6.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">
@@ -4721,7 +4746,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="s72">ActionProperty</col>
 		<col def="S72">ISDisplayName</col>
 		<row><td>{00000000-0000-0000-0000-000000000000}</td><td>***ALL_VERSIONS***</td><td></td><td></td><td>2</td><td/><td>ISFOUNDNEWERPRODUCTVERSION</td><td>ISPreventDowngrade</td></row>
-		<row><td>{06B2AB22-7B37-4CFA-B2DA-895AECBB8374}</td><td>0.11.1</td><td>0.11.1</td><td>1033</td><td>768</td><td/><td>ISACTIONPROP1</td><td>0.11.1</td></row>
+		<row><td>{06B2AB22-7B37-4CFA-B2DA-895AECBB8374}</td><td>0.11.2</td><td>0.11.2</td><td>1033</td><td>768</td><td/><td>ISACTIONPROP1</td><td>0.11.2</td></row>
 	</table>
 
 	<table name="Verb">

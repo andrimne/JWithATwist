@@ -34,6 +34,14 @@
 			<Name>JWithATwist</Name>
 			<Project>{0F2DADA6-C9E9-4B12-8A14-E732166B3458}</Project>
 		</ProjectReference>
+		<ProjectReference Include="..\JWithATwist.Console\JWithATwist.Console.fsproj">
+			<Name>JWithATwist.Console</Name>
+			<Project>{3C623837-231A-47D1-970B-ACBFAEC4F56A}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\JWithATwist.MockInterpreter\JWithATwist.MockInterpreter.fsproj">
+			<Name>JWithATwist.MockInterpreter</Name>
+			<Project>{5372D991-F152-4941-AA01-3A04FBD87D76}</Project>
+		</ProjectReference>
 		<ProjectReference Include="..\JWithATwist.Test\JWithATwist.Test.fsproj">
 			<Name>JWithATwist.Test</Name>
 			<Project>{D62538F9-589E-4DBD-82A3-44F1C78ADE35}</Project>
