@@ -4,9 +4,9 @@
 	<title></title>
 </head>
 <body dir="ltr">
-<h1>JWithATwist Mock Parser</h1>
+<h1>JWithATwist Mock Interpreter</h1>
 
-<p>JWithATwist is a programming language under development. It has many similarities with J. You can look at <a href="http://www.jsoftware.com">www.jsoftware.com</a> to find out what J is. This parser is supposed to become the parser for this new language, but the language elements are only mock objects. You can only work with integers. There are only a few operations you can use.</p>
+<p>JWithATwist is a programming language under development. It has many similarities with J. You can look at <a href="http://www.jsoftware.com">www.jsoftware.com</a> to find out what J is. This interpreter is supposed to become the interpreter for this new language, but the language elements are only mock objects. You can only work with integers. There are only a few operations you can use.</p>
 
 <p>I use the J syntax to describe this language.</p>
 
@@ -18,7 +18,7 @@
 	<li>A MONADIC VERB has one argument, a DYADIC VERB has two. Adverbs and conjunctions are also called monadic or dyadic after their number of noun argments.</li>
 </ul>
 
-<p>The operations in this mock parser:</p>
+<p>The operations in this mock interpreter:</p>
 
 <ul>
 	<li>Dyadic verb Addition,<code> +</code></li>
@@ -71,18 +71,18 @@
 
 <p>In the present implementation the noun definitions does not add any functional value.</p>
 
-<p>I will use this parser as an argument in a discussion about the J language. I have questioned the syntax of tacit J many times. The answer is always - How should it be instead. This is how I think it should be. Nearly exactly like normal scripted J.</p> 
+<p>I will use this interpreter as an argument in a discussion about the J language. I have questioned the syntax of tacit J many times. The answer is always - How should it be instead. This is how I think it should be. Nearly exactly like normal scripted J.</p> 
 <p> I want to add that if you add a Left verb and a Right verb to this parser, you could add a definition of a new functional entity with one or two verb arguments and a verb result which would possibly let you use higher order functions on these verbs.</p>
 
 <p>You could of course also use Left verb and Right verb to define adverbs and conjunctions in some kind of direct definition form.</p>
 
-<p>The tacit J parser is in many ways similar to this parser. It does not have definitions of adverbs and conjunctions either.</p>
+<p>The tacit J interpreter is in many ways similar to this interpreter. It does not have definitions of adverbs and conjunctions either.</p>
 
 <p>Some notes on implementation:</p>
 
 <ul>
-	<li>The parser creates a composite compiled .NET function which is executed when the parsing process is finished. It is more like JIT-compiled than interpreted code.</li>
-	<li>The parser is written in F# and with FParsec.</li>
+	<li>The interpreter creates a composite compiled .NET function which is executed when the interpretation process is finished. It is more like JIT-compiled than interpreted code.</li>
+	<li>The interpreter is written in F# and with FParsec.</li>
 	<li>In the F# environment you can write code nearly as efficient as in C++.</li>
 	<li>The full .NET environment and the rest of the Windows environment, called Windows RT, is easily available from F#. Integration with the Windows environment is easy.</li>
 	<li>In JWithATwist an adverb or conjunction always returns a noun.</li>
