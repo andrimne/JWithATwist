@@ -6,7 +6,11 @@
 <body dir="ltr">
 <h1>JWithATwist</h1>
 
-<p>JWithATwist is a programming language under development. It has many similarities with J. You can look at <a href="http://www.jsoftware.com">www.jsoftware.com</a> to find out what J is. </p>
-<p>You can find the JWithATwist documentation <a href="https://github.com/andrimne/JWithATwist.DocBook/blob/master/target/en/JWithATwistReferenceManual.pdf">here</a></p>
+<p>JWithATwist is a programming language under development. It has many similarities with the programming language J. You can look at <a href="http://www.jsoftware.com">www.jsoftware.com</a> to find out what J is. </p>
+<p>You can download JWithATwist <a href="https://github.com/andrimne/JWithATwist/releases">here</a>.</p>
+<p>You can clone the JWithATwist repository and use JWithATwist from Visual Studio.</p>
+<p>You can find the JWithATwist documentation <a href="https://github.com/andrimne/JWithATwist.DocBook/blob/master/target/en/JWithATwistReferenceManual.pdf">here</a>.</p>
+<p>You can find information about some design decisions in this blog - <a href="https://erlhelinfotech.wordpress.com/">erlhelinfotech.wordpress.com</a>.</p>
+<p>The <a href="https://github.com/andrimne/JWithATwist/tree/master/JWithATwist.Test">tests</a> are also documentation.</p>
 </body>
 </html>
