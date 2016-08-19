@@ -1284,50 +1284,8 @@ module Base =
         |_ ->
             xNoun
 
-            (*
-    let rec JShape (xNoun:JNoun) (yNoun:JNoun) : JNoun =
-        match xNoun.JShape with
-        |([||]|[|_|])->
-            let shapeFunction xValue yType yShape yValue unionCase fill =
-                match xValue,yShape with
-                |xValue,_ when 0 = Array.fold (*) 1 xValue ->
-                    {JType = yType; JShape = xValue; JValue = unionCase [||] ; }
-                |_,yShape when 0 = Array.fold (*) 1 yShape ->
-                    raise JExceptionLengthError
-                |[||],_ ->
-                    let rValue = ArrayTake 1 fill yValue
-                    {JType = yType; JShape = xValue; JValue = unionCase rValue ; }
-                |_ ->
-                    let rValue = RepeatArray (Array.fold (*) 1 xValue) yValue
-                    {JType = yType; JShape = xValue; JValue = unionCase rValue ; }
-            match xNoun.JValue,yNoun.JType,yNoun.JShape,yNoun.JValue with
-            //Integer
-            |JTypeIntegerArray xValue,yType,yShape,JTypeIntegerArray yValue ->
-                let xValueInt = Array.map JTypeIntegerToJTypeInt xValue
-                shapeFunction xValueInt  yType yShape yValue JTypeIntegerArray 0L
-            //Float
-            |JTypeIntegerArray xValue,yType,yShape,JTypeFloatArray yValue ->
-                let xValueInt = Array.map JTypeIntegerToJTypeInt xValue
-                shapeFunction xValueInt yType yShape yValue JTypeFloatArray 0.0
-            //Boolean
-            |JTypeIntegerArray xValue,yType,yShape,JTypeBooleanArray yValue ->
-                let xValueInt = Array.map JTypeIntegerToJTypeInt xValue
-                shapeFunction xValueInt yType yShape yValue  JTypeBooleanArray false
-            //Unicode
-            |JTypeIntegerArray xValue,yType,yShape,JTypeUnicodeArray yValue ->
-                let xValueInt = Array.map JTypeIntegerToJTypeInt xValue
-                shapeFunction xValueInt yType yShape yValue  JTypeUnicodeArray ' '
-            //Boxed
-            |JTypeIntegerArray xValue,yType,yShape,JTypeBoxedArray yValue ->
-                let xValueInt = Array.map JTypeIntegerToJTypeInt xValue
-                shapeFunction xValueInt yType yShape yValue JTypeBoxedArray ZeroNounConstant
-            |_ ->
-                raise JExceptionSystemError
-        |_ ->
-            let rank = [|1;yNoun.JShape.Length|]
-            RankDyadic JShape rank xNoun yNoun
 
-            *)
+
     let rec JShape (xNoun:JNoun) (yNoun:JNoun) : JNoun =
         match xNoun.JShape with
         |([||]|[|_|])->
@@ -2557,7 +2515,8 @@ module Base =
                     let aNounItem = JDefaultFormat x
                     let OneOne = {JType = JTBType.JTypeInteger  ; JShape = [|2|]; JValue = JTypeIntegerArray [|1L;1L|]; }
                     let MinusTwo = {JType = JTBType.JTypeInteger  ; JShape = [||]; JValue = JTypeIntegerArray [|-2L|]; }
-                    let rNounItem= JShape (JTake MinusTwo (JCatenate OneOne (JShapeOf aNounItem))) aNounItem
+                    let shape = JTake MinusTwo (JCatenate OneOne (JShapeOf aNounItem))
+                    let rNounItem = JShape shape (JRavel aNounItem)
                     rValue.[ix] <- (JBox rNounItem)
                 Array.iteri f yValue
                 let f acc  x =
@@ -2589,7 +2548,7 @@ module Base =
                     let aNounItem = JDefaultFormat  x
                     let OneOne = {JType = JTBType.JTypeInteger  ; JShape = [|2|]; JValue = JTypeIntegerArray [|1L;1L|]; }
                     let MinusTwo = {JType = JTBType.JTypeInteger  ; JShape = [||]; JValue = JTypeIntegerArray [|-2L|]; }
-                    let rNounItem= JShape (JTake MinusTwo (JCatenate OneOne (JShapeOf aNounItem))) aNounItem
+                    let rNounItem= JShape (JTake MinusTwo (JCatenate OneOne (JShapeOf aNounItem))) (JRavel aNounItem)
                     rValue.[ix] <- rNounItem
                 Array.iteri f yValue
                 let iNoun = {JType = JTBType.JTypeBoxed  ; JShape = yShape; JValue = JTypeBoxedArray rValue; }

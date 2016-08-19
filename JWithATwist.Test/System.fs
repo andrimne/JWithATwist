@@ -280,7 +280,32 @@ module System =
             let expected = JNounDefine @"{ |, |< |i. 0 }"
             Assert.Equal(expected,actual)
 
+        [<Fact>]
+        member x.``Group mean`` () =
+            let GroupMean = JVerbMonadicDefine @"
+{!
+    {! 
+        |<
+        {! ( 0 + / ] ) % |# ] } 
+        |> ] 
+    } 
+    |'/ 0 / ]
+}"
+            let y = JNounDefine @"{ ( |< 4 2 8 ) , ( |< 13 7 9 2 ) , |< 0 1 }"
+            let actual = GroupMean y
+            let expected = JNounDefine @"{ |< |'/ 0 / ( 4 + 2 % 3 ) , 7.75 0.5 }"
+            Assert.Equal(expected,actual)
 
+        [<Fact>]
+        member x.``Group mean i F#`` () =
+            let each y u = 
+                JRankMonadic y (fun yy -> JBox (u (JOpen yy))) ZeroNounConstant
+            let mean  y = 
+                JDivide (JFold ZeroNounConstant y JAdd) (JTally y)
+            let sets = JNounDefine @"{ ( |< 4 2 8 ) , ( |< 13 7 9 2 ) , |< 0 1 }"
+            let actual = each sets mean
+            let expected = JNounDefine @"{ |< |'/ 0 / ( 4 + 2 % 3 ) , 7.75 0.5 }"
+            Assert.Equal(expected,actual)
 
 
     type ``Use case magic`` () =

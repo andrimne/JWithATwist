@@ -1770,16 +1770,7 @@ type ``Test RankMonadic:`` () =
             let actual = JFold x y JAdd
             Assert.Equal(expected,actual)
  
-            (*
-        [<Fact>]
-        member x.``A scalar left argument fills all the required cells of the startvalue`` () =
-            //6 Plus Fold 0 2 Shape i.0 should give 2 Shape 6
-            let x = {JType = JTBType.JTypeInteger; JShape= [||]; JValue = JTypeIntegerArray [|6L|] ;}
-            let y = {JType = JTBType.JTypeInteger; JShape= [|0;2|]; JValue = JTypeIntegerArray [||] ;}
-            let expected = {JType = JTBType.JTypeInteger; JShape= [|2|]; JValue = JTypeIntegerArray [|6L;6L|] ;}
-            let actual = JFold x y JAdd
-            Assert.Equal(expected,actual)
-            *)
+
         [<Fact>]
         member x.``Sum integer array of rank greater than 1`` () =
             //0 0 Plus Fold 2 2 Shape 1 2 3 4 should give 4 6
@@ -3130,5 +3121,22 @@ type ``Test RankMonadic:`` () =
             let actual = JDefaultFormat y
             Assert.Equal(expected,actual) 
 
+        [<Fact>]
+        member x.``JDefaultFormat (Box 1 2 ) , Box 3 4 should give 1 8 Shape " 1 2 3 4"`` () =
+            let a = {JType = JTBType.JTypeInteger; JShape= [|2|]; JValue = JTypeIntegerArray [|1L;2L|] ;}
+            let b = {JType = JTBType.JTypeInteger; JShape= [|2|]; JValue = JTypeIntegerArray [|3L;4L|] ;}
+            let y = {JType = JTBType.JTypeBoxed; JShape= [|2|]; JValue = JTypeBoxedArray [|a;b|] ;}
+            let expected = {JType = JTBType.JTypeUnicode; JShape= [|1;8|]; JValue = JTypeUnicodeArray [|' ';'1';' ';'2';' ';'3';' ';'4'|] ;}
+            let actual = JDefaultFormat y
+            Assert.Equal(expected,actual) 
+
+        [<Fact>]
+        member x.``JDefaultFormat 2 1 Shape (Box 1 2 ) , Box 3 4 should give 2 4 Shape " 1 2 3 4"`` () =
+            let a = {JType = JTBType.JTypeInteger; JShape= [|2|]; JValue = JTypeIntegerArray [|1L;2L|] ;}
+            let b = {JType = JTBType.JTypeInteger; JShape= [|2|]; JValue = JTypeIntegerArray [|3L;4L|] ;}
+            let y = {JType = JTBType.JTypeBoxed; JShape= [|2;1|]; JValue = JTypeBoxedArray [|a;b|] ;}
+            let expected = {JType = JTBType.JTypeUnicode; JShape= [|2;4|]; JValue = JTypeUnicodeArray [|' ';'1';' ';'2';' ';'3';' ';'4'|] ;}
+            let actual = JDefaultFormat y
+            Assert.Equal(expected,actual) 
 
                                                                                                                                                                                                                          

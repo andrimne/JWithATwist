@@ -1178,6 +1178,7 @@
 		<row><td>JWITHATWIST_0.11.1</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist 0.11.1</td><td/><td>0</td><td/></row>
 		<row><td>JWITHATWIST_0.11.2</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist 0.11.2</td><td/><td>0</td><td/></row>
 		<row><td>JWITHATWIST_0.12</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist 0.12</td><td/><td>0</td><td/></row>
+		<row><td>JWITHATWIST_0.12.1</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist 0.12.1</td><td/><td>0</td><td/></row>
 		<row><td>JWITHATWIST_INSTALL</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist</td><td/><td>0</td><td/></row>
 		<row><td>JWITHATWIST_V0.11.1</td><td>ANDRIMNE</td><td>JWITHA~1|JWithATwist-v0.11.1</td><td/><td>0</td><td/></row>
 		<row><td>LocalAppDataFolder</td><td>TARGETDIR</td><td>.:LocalA~1|LocalAppData</td><td/><td>0</td><td/></row>
@@ -3801,7 +3802,7 @@
 		<row><td>ID_STRING5</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1163609743</td></row>
 		<row><td>ID_STRING6</td><td>1033</td><td>JWithATwist Mock Browser</td><td>0</td><td/><td>-1029409717</td></row>
 		<row><td>ID_STRING7</td><td>1033</td><td>JWithATwist Mock Parser</td><td>0</td><td/><td>-1029379860</td></row>
-		<row><td>ID_STRING8</td><td>1033</td><td>JWithATwist 0.12</td><td>0</td><td/><td>-475776755</td></row>
+		<row><td>ID_STRING8</td><td>1033</td><td>JWithATwist 0.12.1</td><td>0</td><td/><td>-1675349907</td></row>
 		<row><td>ID_STRING9</td><td>1033</td><td>JWITHA~1|JWithATwist Console</td><td>0</td><td/><td>-475762131</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>-1163642231</td></row>
 	</table>
@@ -4454,9 +4455,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
-		<row><td>ProductCode</td><td>{FE8AF9B8-DE47-4686-BCC3-9D40CDEA618C}</td><td/></row>
-		<row><td>ProductName</td><td>JWithATwist 0.12</td><td/></row>
-		<row><td>ProductVersion</td><td>0.12</td><td/></row>
+		<row><td>ProductCode</td><td>{775AEF49-4563-4081-8F4C-DB7F51650AEB}</td><td/></row>
+		<row><td>ProductName</td><td>JWithATwist 0.12.1</td><td/></row>
+		<row><td>ProductVersion</td><td>0.12.1</td><td/></row>
 		<row><td>ProgressType0</td><td>install</td><td/></row>
 		<row><td>ProgressType1</td><td>Installing</td><td/></row>
 		<row><td>ProgressType2</td><td>installed</td><td/></row>
@@ -4469,7 +4470,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
 		<row><td>SHOWLAUNCHPROGRAM</td><td>-1</td><td/></row>
-		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION45FULL;ISACTIONPROP1</td><td/></row>
+		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION45FULL;ISACTIONPROP1;ISACTIONPROP2</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
 		<row><td>UpgradeCode</td><td>{06B2AB22-7B37-4CFA-B2DA-895AECBB8374}</td><td/></row>
@@ -4747,6 +4748,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S72">ISDisplayName</col>
 		<row><td>{00000000-0000-0000-0000-000000000000}</td><td>***ALL_VERSIONS***</td><td></td><td></td><td>2</td><td/><td>ISFOUNDNEWERPRODUCTVERSION</td><td>ISPreventDowngrade</td></row>
 		<row><td>{06B2AB22-7B37-4CFA-B2DA-895AECBB8374}</td><td>0.11.2</td><td>0.11.2</td><td>1033</td><td>768</td><td/><td>ISACTIONPROP1</td><td>0.11.2</td></row>
+		<row><td>{06B2AB22-7B37-4CFA-B2DA-895AECBB8374}</td><td>0.12</td><td>0.12</td><td>1033</td><td>768</td><td/><td>ISACTIONPROP2</td><td>0.12</td></row>
 	</table>
 
 	<table name="Verb">
