@@ -26,7 +26,7 @@
     
     <Feature Id='Complete' Level='1'>
       <ComponentGroupRef Id='JWithATwistComponentGroup' />      
-      <ComponentRef Id='ProgramMenuDir' />
+      <ComponentRef Id='RemoveDirectories' />
     </Feature>
     
     <Icon Id="JWithATwist.ico" SourceFile="$(var.JWithATwist.ProjectDir)\JWithATwist.ico" />

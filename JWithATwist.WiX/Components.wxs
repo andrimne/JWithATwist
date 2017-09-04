@@ -2,12 +2,12 @@
 <Wix xmlns ="http://schemas.microsoft.com/wix/2006/wi" >
 	<Fragment>
     
-    <Component Id="ProgramMenuDir"
-        Directory="ProgramMenuDir">
+    <Component Id="RemoveDirectories" Directory="ProgramMenuDir">
       <RemoveFolder Id='ProgramMenuDir' On='uninstall' />
+      <RemoveFolder Id='AndrimneInstallDirectory' On='uninstall' />
       <RegistryValue Root='HKCU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value='' KeyPath='yes'  />
     </Component>
-
+    
     <ComponentGroup Id="JWithATwistComponentGroup" Directory="INSTALLDIR">
       <Component  >
         <File Source='$(var.JWithATwist.Console.TargetPath)' KeyPath='yes'  >
