@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns ="http://schemas.microsoft.com/wix/2006/wi" 
+    xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+  <Product Id="*" Name="JWithATwist" Language="1033" 
+      Version="0.13.1" Manufacturer="Andrimne" UpgradeCode="3F00EDAD-668C-4DF0-B838-F415F2BF17A7">
+    
+    <Package  Keywords='Installer' Description="JWithATwist Installer"
+      Manufacturer='Andrimne'
+      InstallerVersion='200' Languages='1033' Compressed='yes' SummaryCodepage='1252'
+      InstallScope='perMachine'
+      Platform='x64'/>
+    <MediaTemplate EmbedCab='yes'/>
+    
+    <Property Id='WIXUI_INSTALLDIR' Value='INSTALLDIR' />
+    <WixVariable Id='WixUILicenseRtf'  Value="$(var.JWithATwist.ProjectDir)\GPLv3.rtf" />
+    <WixVariable Id='WixUIDialogBmp' Value="$(var.JWithATwist.ProjectDir)\WixUIDialogBmp.bmp" />
+    <WixVariable Id='WixUIBannerBmp' Value="$(var.JWithATwist.ProjectDir)\WixUIBannerBmp.bmp" />    
+    <UIRef Id='WixUI_InstallDir' />
+    <UIRef Id='WixUI_ErrorProgressText' />   
+    <MajorUpgrade  Schedule='afterInstallExecute' 
+      DowngradeErrorMessage='A newer version of [ProductName] is already installed.'/>      
+    <PropertyRef Id="WIX_IS_NETFRAMEWORK_46_OR_LATER_INSTALLED"/>    
+    <Condition Message="This application requires .NET Framework 4.6. Please install the .NET Framework then run this installer again.">
+      <![CDATA[Installed OR WIX_IS_NETFRAMEWORK_46_OR_LATER_INSTALLED]]>
+    </Condition>    
+    
+    <Feature Id='Complete' Level='1'>
+      <ComponentGroupRef Id='JWithATwistComponentGroup' />      
+      <ComponentRef Id='ProgramMenuDir' />
+    </Feature>
+    
+    <Icon Id="JWithATwist.ico" SourceFile="$(var.JWithATwist.ProjectDir)\JWithATwist.ico" />
+  
+  </Product>
+</Wix>

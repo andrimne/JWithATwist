@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns ="http://schemas.microsoft.com/wix/2006/wi" >
+	<Fragment>
+    
+    <Component Id="ProgramMenuDir"
+        Directory="ProgramMenuDir">
+      <RemoveFolder Id='ProgramMenuDir' On='uninstall' />
+      <RegistryValue Root='HKCU' Key='Software\[Manufacturer]\[ProductName]' Type='string' Value='' KeyPath='yes'  />
+    </Component>
+
+    <ComponentGroup Id="JWithATwistComponentGroup" Directory="INSTALLDIR">
+      <Component  >
+        <File Source='$(var.JWithATwist.Console.TargetPath)' KeyPath='yes'  >
+          <Shortcut  Id="startmenuJWithATwistConsoleEXE" Directory="ProgramMenuDir" Name="JWithATwist"
+               Icon="JWithATwist.ico" IconIndex="0" Advertise="yes" />
+          <Shortcut Id="desktopJWithATwistConsoleEXE" Directory="DesktopFolder" Name="JWithATwist"
+               Icon="JWithATwist.ico" IconIndex="0" Advertise="yes" />
+        </File>
+      </Component>
+      <Component >
+        <File Source='$(var.JWithATwist.Console.TargetPath).config'  />
+      </Component>
+      <Component >
+        <File Source='$(var.JWithATwist.TargetPath)' />
+      </Component>
+      <Component >
+        <File Source='$(var.JWithATwist.TargetDir)\FParsec.dll'  />
+      </Component>
+      <Component >
+        <File Source='$(var.JWithATwist.TargetDir)\FParsecCS.dll'/>
+      </Component>
+      <Component >
+        <File Source='$(var.JWithATwist.TargetDir)\FSharp.Core.dll' />
+      </Component>
+      <Component >
+        <File Source='$(var.JWithATwist.MockInterpreter.TargetPath)' KeyPath='yes'  >
+          <Shortcut Id="startmenuJWithATwistMockInterpreterEXE" Directory="ProgramMenuDir" Name="JWithATwist Mock Interpreter"
+               Icon="JWithATwist.ico" IconIndex="0" Advertise="yes" />
+          <Shortcut Id="desktopJWithATwistMockInterpreterEXE" Directory="DesktopFolder" Name="JWithATwist Mock Interpreter"
+               Icon="JWithATwist.ico" IconIndex="0" Advertise="yes" />
+        </File>
+      </Component>
+      <Component >
+        <File Source='$(var.JWithATwist.MockInterpreter.TargetPath).config' />
+      </Component>
+      <Component >
+        <File Source='$(var.JWithATwist.ProjectDir)\copyright.txt' />
+      </Component>
+    </ComponentGroup>
+    
+	</Fragment>
+</Wix>

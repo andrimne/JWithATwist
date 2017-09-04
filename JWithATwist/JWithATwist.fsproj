@@ -84,12 +84,13 @@
     <Compile Include="Define.fs" />
     <Content Include="packages.config" />
     <Content Include="copyright.txt" />
-    <None Include="regid.2015-2.se.erlinghellenas.www.jwithatwist_1463998265.swidtag" />
     <None Include="GPLv3.rtf" />
     <Content Include="JWithATwist.ico" />
     <None Include="JWithATwist.xcf" />
-    <None Include="splash.png" />
-    <None Include="splash.xcf" />
+    <None Include="WixUIDialogBmp.xcf" />
+    <Content Include="WixUIDialogBmp.bmp" />
+    <None Include="WixUIBannerBmp.xcf" />
+    <Content Include="WixUIBannerBmp.bmp" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FParsec">

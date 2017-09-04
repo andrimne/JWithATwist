@@ -5,6 +5,8 @@
 // TODO: Cut
 // TODO: Raze
 // TODO: Complete user documentation
+// TODO: Transpose not working with vector argument
+// TODO: Rename Magnitude to Absolute value
 
 
 

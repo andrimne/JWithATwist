@@ -162,10 +162,10 @@ module Base =
     
     let JSignum yNoun =
         match yNoun.JType with
-        |JTBType.JTypeInteger _ -> 
+        |JTBType.JTypeInteger  -> 
             let JSignumBasic : JTypeBasicFunctionMonadicDU = JBasicFunctionMonadicInteger (fun x -> (int64) (sign x))
             JScalarFunctionMonadic JSignumBasic yNoun
-        |JTBType.JTypeFloat _ ->
+        |JTBType.JTypeFloat  ->
             let JSignumBasic : JTypeBasicFunctionMonadicDU = JBasicFunctionMonadicFloatToInteger (fun x -> (int64) (sign x))
             JScalarFunctionMonadic JSignumBasic yNoun
         |_ ->
@@ -173,7 +173,7 @@ module Base =
 
     let JFloor yNoun =
         match yNoun.JType with
-        |JTBType.JTypeFloat _ ->
+        |JTBType.JTypeFloat ->
             let inline f x =
                 if (abs x) <= MaxValueWithULPEqualToOne then
                     (int64) (floor x)
@@ -186,7 +186,7 @@ module Base =
 
     let JCeiling yNoun =
         match yNoun.JType with
-        |JTBType.JTypeFloat _ ->
+        |JTBType.JTypeFloat ->
             let inline f x =
                 if (abs x) <= MaxValueWithULPEqualToOne then
                     (int64) (ceil x)
@@ -200,10 +200,10 @@ module Base =
 
     let JNegate yNoun =
         match yNoun.JType with
-        |JTBType.JTypeInteger _ -> 
+        |JTBType.JTypeInteger -> 
             let JNegateBasic : JTypeBasicFunctionMonadicDU = JBasicFunctionMonadicInteger (fun x -> - x)
             JScalarFunctionMonadic JNegateBasic yNoun
-        |JTBType.JTypeFloat _ ->
+        |JTBType.JTypeFloat  ->
             let JNegateFloatBasic : JTypeBasicFunctionMonadicDU = JBasicFunctionMonadicFloat (fun x -> - x)
             JScalarFunctionMonadic JNegateFloatBasic yNoun
         |_ ->
@@ -211,10 +211,10 @@ module Base =
 
     let JMagnitude yNoun =
         match yNoun.JType with
-        |JTBType.JTypeInteger _ -> 
+        |JTBType.JTypeInteger -> 
             let JMagnitudeBasic : JTypeBasicFunctionMonadicDU = JBasicFunctionMonadicInteger (fun x -> abs x)
             JScalarFunctionMonadic JMagnitudeBasic yNoun
-        |JTBType.JTypeFloat _ ->
+        |JTBType.JTypeFloat  ->
             let JMagnitudeFloatBasic : JTypeBasicFunctionMonadicDU = JBasicFunctionMonadicFloat (fun x -> abs x)
             JScalarFunctionMonadic JMagnitudeFloatBasic yNoun
         |_ ->
@@ -309,10 +309,10 @@ module Base =
 
     let JAdd xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger,JTBType.JTypeInteger -> 
             let JAddBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicInteger (+)
             JScalarFunctionDyadic JAddBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger|JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JAddBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloat (+)
             JScalarFunctionDyadic JAddBasic xNoun yNoun
         |_ ->
@@ -320,10 +320,10 @@ module Base =
 
     let JSubtract xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JSubtractBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicInteger (-)
             JScalarFunctionDyadic JSubtractBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JSubtractBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloat (-)
             JScalarFunctionDyadic JSubtractBasic xNoun yNoun
         |_ ->
@@ -331,10 +331,10 @@ module Base =
 
     let JTimes xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JTimesBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicInteger (*)
             JScalarFunctionDyadic JTimesBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JTimesBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloat (*)
             JScalarFunctionDyadic JTimesBasic xNoun yNoun
         |_ ->
@@ -342,7 +342,7 @@ module Base =
 
     let JDivide xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JDivideBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloat (/)
             JScalarFunctionDyadic JDivideBasic xNoun yNoun
         |_ ->
@@ -350,7 +350,7 @@ module Base =
 
     let JPower xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JPowerBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloat (fun x y -> x ** y)
             JScalarFunctionDyadic JPowerBasic xNoun yNoun
         |_ ->
@@ -360,10 +360,10 @@ module Base =
 
     let JMin xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger, JTBType.JTypeInteger -> 
             let JMinBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicInteger (min)
             JScalarFunctionDyadic JMinBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JMinBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloat (min)
             JScalarFunctionDyadic JMinBasic xNoun yNoun
         |_ ->
@@ -371,10 +371,10 @@ module Base =
 
     let JMax xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JMaxBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicInteger (max)
             JScalarFunctionDyadic JMaxBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JMaxBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloat (max)
             JScalarFunctionDyadic JMaxBasic xNoun yNoun
         |_ ->
@@ -390,13 +390,13 @@ module Base =
 
     let JEqual xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicIntegerToBoolean (=)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloatToBoolean (=)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
-        |JTBType.JTypeUnicode _,JTBType.JTypeUnicode -> 
+        |JTBType.JTypeUnicode ,JTBType.JTypeUnicode -> 
             let compareUnicode (x:JTypeUnicode) (y:JTypeUnicode) =
                 let sx = System.String [|x|]
                 let sy = System.String [|y|]
@@ -404,10 +404,10 @@ module Base =
                 a = 0
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicUnicodeToBoolean compareUnicode
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
-        |JTBType.JTypeBoolean _,JTBType.JTypeBoolean -> 
+        |JTBType.JTypeBoolean ,JTBType.JTypeBoolean -> 
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicBoolean (=)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
-        |JTBType.JTypeBoxed _,JTBType.JTypeBoxed -> 
+        |JTBType.JTypeBoxed ,JTBType.JTypeBoxed -> 
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicBoxedToBoolean (=)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
         |_ ->
@@ -415,13 +415,13 @@ module Base =
 
     let JNotEqual xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JNotEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicIntegerToBoolean (<>)
             JScalarFunctionDyadic JNotEqualBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JNotEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloatToBoolean (<>)
             JScalarFunctionDyadic JNotEqualBasic xNoun yNoun
-        |JTBType.JTypeUnicode _,JTBType.JTypeUnicode -> 
+        |JTBType.JTypeUnicode ,JTBType.JTypeUnicode -> 
             let compareUnicode (x:JTypeUnicode) (y:JTypeUnicode) =
                 let sx = System.String [|x|]
                 let sy = System.String [|y|]
@@ -429,10 +429,10 @@ module Base =
                 a <> 0
             let JNotEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicUnicodeToBoolean compareUnicode
             JScalarFunctionDyadic JNotEqualBasic xNoun yNoun
-        |JTBType.JTypeBoolean _,JTBType.JTypeBoolean -> 
+        |JTBType.JTypeBoolean ,JTBType.JTypeBoolean -> 
             let JNotEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicBoolean (<>)
             JScalarFunctionDyadic JNotEqualBasic xNoun yNoun
-        |JTBType.JTypeBoxed _,JTBType.JTypeBoxed -> 
+        |JTBType.JTypeBoxed ,JTBType.JTypeBoxed -> 
             let JNotEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicBoxedToBoolean (<>)
             JScalarFunctionDyadic JNotEqualBasic xNoun yNoun
         |_ ->
@@ -440,13 +440,13 @@ module Base =
 
     let JLessThan xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicIntegerToBoolean (<)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloatToBoolean (<)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
-        |JTBType.JTypeUnicode _,JTBType.JTypeUnicode -> 
+        |JTBType.JTypeUnicode ,JTBType.JTypeUnicode -> 
             let compareUnicode (x:JTypeUnicode) (y:JTypeUnicode) =
                 let sx = System.String [|x|]
                 let sy = System.String [|y|]
@@ -454,7 +454,7 @@ module Base =
                 a < 0
             let JLessThanBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicUnicodeToBoolean compareUnicode
             JScalarFunctionDyadic JLessThanBasic xNoun yNoun
-        |JTBType.JTypeBoolean _,JTBType.JTypeBoolean -> 
+        |JTBType.JTypeBoolean ,JTBType.JTypeBoolean -> 
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicBoolean (<)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
         |_ ->
@@ -462,13 +462,13 @@ module Base =
 
     let JLargerThan xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicIntegerToBoolean (>)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloatToBoolean (>)
             JScalarFunctionDyadic JEqualBasic xNoun yNoun
-        |JTBType.JTypeUnicode _,JTBType.JTypeUnicode -> 
+        |JTBType.JTypeUnicode ,JTBType.JTypeUnicode -> 
             let compareUnicode (x:JTypeUnicode) (y:JTypeUnicode) =
                 let sx = System.String [|x|]
                 let sy = System.String [|y|]
@@ -476,7 +476,7 @@ module Base =
                 a > 0
             let JLargerThanBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicUnicodeToBoolean compareUnicode
             JScalarFunctionDyadic JLargerThanBasic xNoun yNoun
-        |JTBType.JTypeBoolean _,JTBType.JTypeBoolean -> 
+        |JTBType.JTypeBoolean ,JTBType.JTypeBoolean -> 
             let JLargerThanBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicBoolean (>)
             JScalarFunctionDyadic JLargerThanBasic xNoun yNoun
         |_ ->
@@ -484,13 +484,13 @@ module Base =
 
     let JLessOrEqual xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JLessOrEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicIntegerToBoolean (<=)
             JScalarFunctionDyadic JLessOrEqualBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JLessOrEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloatToBoolean (<=)
             JScalarFunctionDyadic JLessOrEqualBasic xNoun yNoun
-        |JTBType.JTypeUnicode _,JTBType.JTypeUnicode -> 
+        |JTBType.JTypeUnicode ,JTBType.JTypeUnicode -> 
             let compareUnicode (x:JTypeUnicode) (y:JTypeUnicode) =
                 let sx = System.String [|x|]
                 let sy = System.String [|y|]
@@ -498,7 +498,7 @@ module Base =
                 a <= 0
             let JLessOrEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicUnicodeToBoolean compareUnicode
             JScalarFunctionDyadic JLessOrEqualBasic xNoun yNoun
-        |JTBType.JTypeBoolean _,JTBType.JTypeBoolean -> 
+        |JTBType.JTypeBoolean ,JTBType.JTypeBoolean -> 
             let JLessOrEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicBoolean (<=)
             JScalarFunctionDyadic JLessOrEqualBasic xNoun yNoun
         |_ ->
@@ -506,13 +506,13 @@ module Base =
 
     let JLargerOrEqual xNoun yNoun =
         match xNoun.JType,yNoun.JType with
-        |JTBType.JTypeInteger _,JTBType.JTypeInteger -> 
+        |JTBType.JTypeInteger ,JTBType.JTypeInteger -> 
             let JLargerOrEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicIntegerToBoolean (>=)
             JScalarFunctionDyadic JLargerOrEqualBasic xNoun yNoun
-        |(JTBType.JTypeInteger _|JTBType.JTypeFloat _),(JTBType.JTypeInteger|JTBType.JTypeFloat _) ->
+        |(JTBType.JTypeInteger |JTBType.JTypeFloat ),(JTBType.JTypeInteger|JTBType.JTypeFloat ) ->
             let JLargerOrEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicFloatToBoolean (>=)
             JScalarFunctionDyadic JLargerOrEqualBasic xNoun yNoun
-        |JTBType.JTypeUnicode _,JTBType.JTypeUnicode -> 
+        |JTBType.JTypeUnicode ,JTBType.JTypeUnicode -> 
             let compareUnicode (x:JTypeUnicode) (y:JTypeUnicode) =
                 let sx = System.String [|x|]
                 let sy = System.String [|y|]
@@ -520,7 +520,7 @@ module Base =
                 a >= 0
             let JLargerOrEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicUnicodeToBoolean compareUnicode
             JScalarFunctionDyadic JLargerOrEqualBasic xNoun yNoun
-        |JTBType.JTypeBoolean _,JTBType.JTypeBoolean -> 
+        |JTBType.JTypeBoolean ,JTBType.JTypeBoolean -> 
             let JLargerOrEqualBasic : JTypeBasicFunctionDyadicDU = JBasicFunctionDyadicBoolean (>=)
             JScalarFunctionDyadic JLargerOrEqualBasic xNoun yNoun
         |_ ->

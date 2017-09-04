@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns ="http://schemas.microsoft.com/wix/2006/wi" >
+	<Fragment>
+    
+    <Directory Id='TARGETDIR' Name='SourceDir'>
+      
+      <Directory Id='ProgramFiles64Folder' Name='PFiles'>
+        <Directory Id='AndrimneInstallDirectory' Name='Andrimne'>
+          <Directory Id='INSTALLDIR' Name='JWithATwist'/>
+        </Directory>
+      </Directory>
+      
+      <Directory Id="ProgramMenuFolder" Name="Programs">
+        <Directory Id="ProgramMenuDir" Name="JWithATwist"/>
+        <Directory Id="DesktopFolder" Name="Desktop" />
+      </Directory>
+      
+    </Directory>
+    
+	</Fragment>
+</Wix>

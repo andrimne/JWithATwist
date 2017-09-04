@@ -21,6 +21,10 @@ open JWithATwist.Parser
 open System
 open System.Diagnostics
 open FParsec
+open System.Reflection
+
+
+
 
 let test p str =
     match run p str with
