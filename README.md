@@ -1,11 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="ISO-8859-1" />
-	<title></title>
+	<title>JWithATwist</title>
 </head>
 <body dir="ltr">
-<h1>JWithATwist</h1>
-
 <p>JWithATwist is a programming language under development. It has many similarities with the programming language J. You can look at <a href="http://www.jsoftware.com">www.jsoftware.com</a> to find out what J is. </p>
 <p>You can download JWithATwist <a href="https://github.com/andrimne/JWithATwist/releases">here</a>.</p>
 <p>You can clone the JWithATwist repository and use JWithATwist from Visual Studio.</p>
